@@ -1,0 +1,75 @@
+@import url('./assets/css/reset.css');
+@import url('./assets/css/typography.css');
+
+/* Змінні для світлої теми */
+[data-theme="light"] {
+  --text-color: #000;
+  --bg-color: #fff;
+  --link-color: #64c36c;
+  --bg-color-hover: #C5D435;
+  --icon-color: #000;
+  --icon-border-color: #000;
+  --gradient-bg: linear-gradient(45deg, #cfd71d, #0bb2ac);
+}
+
+/* Змінні для темної теми */
+[data-theme="dark"] {
+  --text-color: #fff;
+  --bg-color: #000;
+  --link-color: #64c36c;
+  --bg-color-hover: #C5D435;
+  --icon-color: #fff;
+  --icon-border-color: #000;
+  --gradient-bg: linear-gradient(45deg, #cfd71d, #0bb2ac);
+}
+
+:root {
+  --header-height: max(80px, 8vh);
+  --footer-height: max(80px, 8vh);
+  color: var(--text-color);
+}
+
+/* Базові стилі */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--link-color);
+}
+
+button {
+  color: var(--text-color);
+}
+
+button:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.icon {
+  color: var(--icon-color);
+  border-color: var(--icon-border-color);
+}
+
+.gradient-block {
+  background: var(--gradient-bg);
+}
+
+header {
+  height: var(--header-height);
+}
+
+main {
+  padding-top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  height: var(--footer-height);
+
+  background: var(--text-color);
+  color: var(--bg-color);
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:url" content="https://unipark.com.ua">
+    <meta property="og:title" content="UniPark">
+    <meta property="og:description" content="Українська компанія, яка працює над створенням проєктів з 2015 року.">
+    <meta property="og:image" content="/UNIPARK.png" />
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UniPark" />
+    <meta name="twitter:description" content="Українська компанія, яка працює над створенням проєктів з 2015 року." />
+    <meta name="twitter:image" content="/UNIPARK.png" />
+
+    <link rel="canonical" href="https://unipark.com.ua">
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="UniPark" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "UniPark",
+        "url": "https://unipark.com.ua/",
+        "description": "UniPark - українська компанія, яка працює над створенням проєктів з 2015 року.",
+        "image": "https://vadim4web.github.io/unipark-com-ua/favicon.svg",
+        "sameAs": [
+          "https://www.facebook.com/universalparkua",
+          "https://www.instagram.com/universal.park"
+        ]
+      }
+    </script>
+
+    <!-- Redirect specific script -->
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          const decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(s => s.replace(/~and~/g, '&'))
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+
+    <!-- Theme preference script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        sessionStorage.setItem('theme', prefersDarkScheme ? 'dark' : 'light');
+      });
+    </script>
+</head>
+<body>
+    <h1 style="display: none">UniPark - українська компанія, яка працює над створенням проєктів з 2015 року.</h1>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

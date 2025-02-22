@@ -1,0 +1,28 @@
+/* Typography */
+.text-bold {
+  font-family: "IntelClearBold", sans-serif;
+}
+
+.text-italic {
+  font-family: "IntelClearItalic", sans-serif;
+}
+
+.text-light-italic {
+  font-family: "IntelClearLightItalic", sans-serif;
+}
+
+.text-pro-bold {
+  font-family: "IntelClearProBold", sans-serif;
+}
+
+.text-bold-italic {
+  font-family: "IntelClearBoldItalic", sans-serif;
+}
+
+.text-light {
+  font-family: "IntelClearLight", sans-serif;
+}
+
+.text-regular {
+  font-family: "IntelClearRegular", sans-serif;
+}

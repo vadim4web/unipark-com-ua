@@ -1,0 +1,34 @@
+{
+  "name": "unipark-com-ua",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "prettify": "prettier src/**/*.{js,vue,css} --write",
+    "lint": "eslint --fix src/**/*.{js,vue}",
+    "format": "npm run prettify && npm run lint"
+  },
+  "dependencies": {
+    "@vueuse/core": "^12.7.0",
+    "axios": "^1.7.9",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.1.1",
+    "vue-router": "^4.5.0",
+    "vueperslides": "^3.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.21.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.5.2",
+    "sass": "^1.85.0",
+    "vite": "^6.1.0"
+  }
+}
