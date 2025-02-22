@@ -1,6 +1,6 @@
 export default () => {
 	const storedTheme =
-		sessionStorage.getItem('theme') ||
+		localStorage.getItem('theme') ||
 		document.documentElement.getAttribute('data-theme')
 	return (
 		storedTheme ? storedTheme

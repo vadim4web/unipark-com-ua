@@ -9,7 +9,7 @@ const routes = [
 		path: '/parks',
 		children: [
 			{ path: 'singing', component: () => import('~/views/parks/SingingPark.vue') },
-			{ path: 'trol-domy', component: () => import('~/views/parks/TrolDomyPark.vue') },
+			{ path: 'troldomy', component: () => import('~/views/parks/TrolDomyPark.vue') },
       { path: 'giants-world', component: () => import('~/views/parks/GiantsWorldPark.vue') },
       { path: 'light-n-dreams', component: () => import('~/views/parks/LightAndDreamsPark.vue') },
       { path: 'magic-garden', component: () => import('~/views/parks/MagicGardenPark.vue') },

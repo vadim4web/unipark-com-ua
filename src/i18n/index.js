@@ -1,41 +1,49 @@
 import { createI18n } from 'vue-i18n'
 
 const messages = {
-	en: {
-		OurParks: 'Our Parks',
-		Main: 'Home',
-		SINGING: 'Singing',
-		MAGIC_GARDEN: 'Magic Garden',
-		GIANTS_WORLD: 'Giants’ World',
-		TROLDOMY: 'Trolldomy',
-		LIGHT_AND_DREAMS: 'Light & Dreams',
-		FANTASTIC_PARK: 'Fantastic Park',
-		Production: 'Production',
-		Invest: 'Investment Program',
-		toggleTheme_dark: 'Dark Theme',
-		toggleTheme_light: 'Light Theme',
-		toggleLangTip: 'Language',
-	},
 	uk: {
-		OurParks: 'Наші парки',
-		Main: 'Головна',
+		main: 'Головна',
+		ourParks: 'Наші парки',
+
 		SINGING: 'Співуче',
 		MAGIC_GARDEN: 'Магічний Сад',
 		GIANTS_WORLD: 'Світ Велетнів',
 		TROLDOMY: 'ТрольДоми',
 		LIGHT_AND_DREAMS: 'Light & Dreams',
 		FANTASTIC_PARK: 'Fantastic Park',
-		Production: 'Виробництво',
-		Invest: 'Інвестиційна програма',
-		toggleTheme_dark: 'Темна тема',
-		toggleTheme_light: 'Світла тема',
+
+		production: 'Виробництво',
+		invest: 'Інвестиційна програма',
+		toggleTheme_dark: 'До світлої теми',
+		toggleTheme_light: 'До темної теми',
 		toggleLangTip: 'Мова',
+
+		back: 'Повернутися',
+	},
+	en: {
+		main: 'Main',
+		ourParks: 'Our Parks',
+
+		SINGING: 'Singing',
+		MAGIC_GARDEN: 'Magic Garden',
+		GIANTS_WORLD: 'Giants’ World',
+		TROLDOMY: 'Trolldomy',
+		LIGHT_AND_DREAMS: 'Light & Dreams',
+		FANTASTIC_PARK: 'Fantastic Park',
+
+		production: 'Production',
+		invest: 'Investment Program',
+		toggleTheme_dark: 'To light theme',
+		toggleTheme_light: 'To dark theme',
+		toggleLangTip: 'Language',
+
+		back: 'Go back',
 	},
 }
 
 export default createI18n({
 	legacy: false,
-	locale: sessionStorage.getItem('lang') || 'uk',
+	locale: localStorage.getItem('lang') || 'uk',
 	fallbackLocale: 'uk',
 	messages,
 })

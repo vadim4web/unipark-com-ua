@@ -1,8 +1,10 @@
 @import url('./assets/css/reset.css');
 @import url('./assets/css/typography.css');
+@import url('./assets/css/utility.css');
 
 /* Змінні для світлої теми */
 [data-theme="light"] {
+  --is-dark: 0;
   --text-color: #000;
   --bg-color: #fff;
   --link-color: #64c36c;
@@ -14,6 +16,7 @@
 
 /* Змінні для темної теми */
 [data-theme="dark"] {
+  --is-dark: 1;
   --text-color: #fff;
   --bg-color: #000;
   --link-color: #64c36c;
@@ -24,8 +27,8 @@
 }
 
 :root {
-  --header-height: max(80px, 8vh);
-  --footer-height: max(80px, 8vh);
+  --header-height: max(80px);
+  --footer-height: max(80px);
   color: var(--text-color);
 }
 
@@ -33,6 +36,15 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+a {
+  cursor: pointer;
+  transition: color 0.25s;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -ms-transition: color 0.25s;
+  -o-transition: color 0.25s;
 }
 
 a:hover {
@@ -61,8 +73,7 @@ header {
 }
 
 main {
-  padding-top: var(--header-height);
-  height: calc(100vh - var(--header-height));
+  height: calc(100dvh - var(--header-height) - var(--footer-height));
 }
 
 footer {

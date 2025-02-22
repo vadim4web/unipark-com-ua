@@ -6,10 +6,9 @@ const goBack = () => router.back()
 </script>
 
 <template>
-	<main class="flex-col-center not-found w100">
+	<main class="flex flex-col justify-center items-center">
 		404 ⛔ {{ useRoute().path }}
-
-		<button @click="goBack">back</button>
+		<a role="button" @click="goBack">{{ $t('back') }}</a>
 	</main>
 </template>
 
