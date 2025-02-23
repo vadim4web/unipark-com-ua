@@ -86,6 +86,12 @@ const messages = {
 		LIGHT_AND_DREAMS_: 'Цей унікальний парк ілюмінацій та масштабних світлових інсталяцій має на меті створити справжній тематичний простір з казковими героями, незабутніми локаціями та яскравими фотозонами',
 		GIANTS_WORLD_: 'Тематичний парк з фігурами заввишки від 3 до 5 метрів. Головні герої парку — добрі та злі велетні з легенди про Долину Туманів, що «оживають» за допомогою аніматроніки, а також розмовляють з гостями голосами відомих українців',
 		MAGIC_GARDEN_: 'Проект «Магічний Сад» – тематичний парк із казковими героями, масштабними квітковими інсталяціями та яскравими фотозонами, де кожен відвідувач зможе відчути себе частиною історії.',
+
+
+		FANTASTIC_PARK_1: 'FАNTASTIC PARK це перший в Україні тематичний парк розваг, в якому зібрані фантастичні герої, масштабні інсталяції, казкові ілюмінації та унікальні інтерактивні зони для дорослих та дітей!',
+		FANTASTIC_PARK_2: 'Ти зможеш не просто споглядати за композиціями та робити фото - а взаємодіяти з ними. У FANTASTIC PARK ти станеш невід\'ємною частиною кожної локації!',
+		FANTASTIC_PARK_3: 'Цей фантастичний проєкт готується до зустрічі з вами, але треба трошки зачекати!',
+		FANTASTIC_PARK_4: 'Слідкуйте за новинами Universal Park, ми повідомимо Вам про день нашої спільної подорожі!..',
 	},
 	en: {
 		main: 'Main',
@@ -171,6 +177,11 @@ const messages = {
 		LIGHT_AND_DREAMS_: 'This unique park of illuminations and large-scale light installations is designed to create a truly themed space with fairytale characters, unforgettable locations, and vibrant photo zones.',
 		GIANTS_WORLD_: 'A themed park with figures ranging from 3 to 5 meters in height. The main characters are good and evil giants from the legend of the Valley of Mists, who come to life through animatronics and interact with visitors using voices of famous Ukrainians.',
 		MAGIC_GARDEN_: 'The "Magical Garden" project is a theme park with fairy tale characters, large-scale flower installations and bright photo zones where every visitor can feel like a part of the story. ',
+
+		FANTASTIC_PARK_1: 'FANTASTIC PARK is the first theme amusement park in Ukraine, which brings together fantastic characters, large-scale installations, fairy-tale illuminations and unique interactive zones for adults and children!',
+		FANTASTIC_PARK_2: 'You will not only be able to admire the compositions and take photos - but also interact with them. In FANTASTIC PARK you will become an integral part of each location!',
+		FANTASTIC_PARK_3: 'This fantastic project is getting ready to meet you, but you\'ll have to wait a little!',
+		FANTASTIC_PARK_4: 'Follow the news of Universal Park, we will inform you about the day of our joint trip!..',
 	},
 }
 
