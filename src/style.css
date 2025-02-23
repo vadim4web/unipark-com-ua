@@ -1,6 +1,50 @@
+@import "tailwindcss";
 @import url('./assets/css/reset.css');
 @import url('./assets/css/typography.css');
-@import url('./assets/css/utility.css');
+
+@font-face {
+  font-family: "IntelClearBold";
+  src: url("/font/intel-clear/IntelClear_Bd.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "IntelClearItalic";
+  src: url("/font/intel-clear/IntelClear_It.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "IntelClearLightItalic";
+  src: url("/font/intel-clear/IntelClear_LtIt.ttf") format("truetype");
+  font-style: italic;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "IntelClearProBold";
+  src: url("/font/intel-clear/IntelClearPro_Bd.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "IntelClearBoldItalic";
+  src: url("/font/intel-clear/IntelClear_BdIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "IntelClearLight";
+  src: url("/font/intel-clear/IntelClear_Lt.ttf") format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "IntelClearRegular";
+  src: url("/font/intel-clear/IntelClear_Rg.ttf") format("truetype");
+  font-weight: normal;
+}
 
 /* Змінні для світлої теми */
 [data-theme="light"] {
@@ -8,11 +52,6 @@
   --is-light: 1;
   --text-color: #000;
   --bg-color: #fff;
-  --link-color: #64c36c;
-  --bg-color-hover: #C5D435;
-  --icon-color: #000;
-  --icon-border-color: #000;
-  --gradient-bg: linear-gradient(45deg, #cfd71d, #0bb2ac);
 }
 
 /* Змінні для темної теми */
@@ -21,17 +60,16 @@
   --is-light: 0;
   --text-color: #fff;
   --bg-color: #000;
-  --link-color: #64c36c;
-  --bg-color-hover: #C5D435;
-  --icon-color: #fff;
-  --icon-border-color: #000;
-  --gradient-bg: linear-gradient(45deg, #cfd71d, #0bb2ac);
 }
 
 :root {
+  --link-color: #64c36c;
+  --accent: #C5D435;
+  --text-color-gray: #7d7d7d;
+  --gradient-bg: linear-gradient(0deg, #cfd71d, #0bb2ac);
+  --gradient-bg-45: linear-gradient(45deg, #cfd71d, #0bb2ac);
   --header-height: max(80px);
   --footer-height: max(400px);
-  --text-color-gray: #7d7d7d;
   color: var(--text-color);
 }
 
@@ -62,28 +100,21 @@ button:hover {
   background-color: var(--bg-color-hover);
 }
 
-.icon {
-  color: var(--icon-color);
-  border-color: var(--icon-border-color);
-}
-
-.gradient-block {
-  background: var(--gradient-bg);
-}
-
 header {
   height: var(--header-height);
 }
 
 main {
-  height: calc(100dvh - var(--header-height) - var(--footer-height));
+  min-height: calc(100dvh - var(--header-height) - var(--footer-height));
 }
 
 footer {
-  position: sticky;
-  bottom: 0;
   height: var(--footer-height);
 
   background: var(--text-color);
   color: var(--bg-color);
+}
+
+.text-neutral {
+  color: var(--text-color-gray);
 }

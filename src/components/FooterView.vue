@@ -1,21 +1,19 @@
 <script setup></script>
 
 <template>
-  <footer class="footer">
-    <section class="main-info">
-      <div class="flex flex-col justify-end items-start gap-1">
-        <router-link to="/" class="logo-link">
+  <footer class="footer grid">
+    <section class="main-info grid grid-rows-2">
+      <div class="flex flex-col justify-end items-start gap-[1rem]">
+        <router-link to="/" class="logo-link relative">
           <img
             src="/UNIPARK-w.png"
             alt="UniPark logo white"
             class="logo-image"
           />
         </router-link>
-        <span class="text-gray"
-          >&copy; UniPark. 2015—{{ new Date().getFullYear() }}</span
-        >
+        <span class="text-neutral">&copy; UniPark. 2015—{{ new Date().getFullYear() }}</span>
       </div>
-      <div class="social-media flex justify-start items-center gap-1">
+      <div class="social-media flex justify-start items-center gap-[1rem]">
         <a
           href="https://www.facebook.com/uniparkua"
           target="_blank"
@@ -54,15 +52,13 @@
         </a>
       </div>
     </section>
-
 		<section class="flex flex-col justify-center">
-
-			<div class="sections-grid">
-				<section class="flex flex-col justify-start gap-1">
-					<span class="text-gray">
+			<div class="sections-grid grid grid-cols-3">
+				<section class="flex flex-col justify-start gap-[1rem]">
+					<span class="text-neutral">
 						{{ $t('contacts') }}
 					</span>
-					<menu class="flex flex-col justify-start gap-1">
+					<menu class="flex flex-col justify-start gap-[1rem]">
 						<li>
 							<a href="mailto:info@universal-parks.com">Info@universal-parks.com</a>
 						</li>
@@ -74,8 +70,8 @@
 						</li>
 					</menu>
 				</section>
-				<section class="flex flex-col justify-center gap-1">
-					<menu class="flex flex-col justify-center gap-1">
+				<section class="flex flex-col justify-center gap-[1rem]">
+					<menu class="flex flex-col justify-center gap-[1rem]">
 						<li>
 							<router-link to="/">
 								{{ $t('main') }}
@@ -108,12 +104,11 @@
 						</li>
 					</menu>
 				</section>
-				<section class="flex flex-col justify-center gap-1">
-					<span class="text-gray">
+				<section class="flex flex-col justify-center gap-[1rem]">
+					<span class="text-neutral">
 						{{ $t('parks') }}
 					</span>
-		
-					<ul class="flex flex-col justify-center gap-1">
+					<ul class="flex flex-col justify-center gap-[1rem]">
 						<li>
 							<router-link to="/parks/singing">{{ $t('SINGING') }}</router-link>
 						</li>
@@ -144,31 +139,20 @@
 					</ul>
 				</section>
 			</div>
-
 		</section>
-
   </footer>
 </template>
 
 <style lang="scss" scoped>
 .footer {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 2fr;
 
   .main-info {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
     padding-left: 4rem;
   }
 
-	.sections-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-
   .logo-link {
     padding: 0 !important;
-    position: relative;
     left: -1rem;
 
     .logo-image {

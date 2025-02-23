@@ -17,6 +17,10 @@ const routes = [
     ],
 	},
 	{
+		path: '/company',
+		component: () => import('~/views/CompanyPage.vue'),
+	},
+	{
 		path: '/production',
 		component: () => import('~/views/ProductionPage.vue'),
 	},

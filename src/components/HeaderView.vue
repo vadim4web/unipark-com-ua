@@ -27,14 +27,12 @@ const parksMenuToggle = () => {
       <router-link to="/" class="logo-link" @click="parksMenuClose">
 				<img src="/UNIPARK.png" alt="UniPark logo" class="logo-image">
 			</router-link>
-
       <menu class="main-menu flex justify-center items-center">
         <li>
           <router-link to="/" @click="parksMenuClose">
             {{ $t('main') }}
           </router-link>
         </li>
-
         <li class="parks">
           <ul>
             <li>
@@ -42,7 +40,6 @@ const parksMenuToggle = () => {
                 {{ $t('ourParks') }}
               </a>
             </li>
-
             <li>
               <ul ref="parksList" class="parks-list">
                 <li>
@@ -83,7 +80,6 @@ const parksMenuToggle = () => {
             </li>
           </ul>
         </li>
-
         <li>
           <router-link to="/production" @click="parksMenuClose">
             {{ $t('production') }}
@@ -95,8 +91,7 @@ const parksMenuToggle = () => {
           </router-link>
         </li>
       </menu>
-
-      <menu class="extra flex justify-center items-center gap-1">
+      <menu class="extra flex justify-center items-center gap-[1rem]">
         <li>
           <router-link to="/invest" @click="parksMenuClose">
             <svg
@@ -158,10 +153,8 @@ const parksMenuToggle = () => {
             </svg>
           </router-link>
         </li>
-
         <li class="flex flex-col justify-center items-center">
           <theme-toggler @click="parksMenuClose" />
-
           <language-toggler @click="parksMenuClose" />
         </li>
       </menu>

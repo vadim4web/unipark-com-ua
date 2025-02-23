@@ -1,7 +1,6 @@
-# unipark-com-ua
-UniPark - українська компанія, яка працює над створенням проєктів з 2015 року.
+# UniPark - українська компанія, яка працює над створенням проєктів з 2015 року.
 
-1
+## 1
 
 ```bash
 npm create vite@latest .
@@ -44,3 +43,8 @@ touch .prettierrc eslint.config.js
 ```
 
 that is the very basic setup 🤟😎
+
+
+## 2
+[Installing Tailwind CSS with PostCSS](https://tailwindcss.com/docs/installation/using-postcss)
+
