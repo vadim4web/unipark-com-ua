@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import emailjs from '@emailjs/browser'
 
 import TICKETS from '~/assets/icons/TICKETS.png'
@@ -13,10 +13,6 @@ const USER_KEY = import.meta.env.VITE_EMAILJS_USER_KEY
 
 const email = ref('')
 
-const emailSubjectQueryString = (() => `?subject=FEEDBACK REQUEST from ${email.value}!`)
-
-
-
 const submitForm = async () => {
 	const emailString = `${email.value}`
 
@@ -29,9 +25,7 @@ const submitForm = async () => {
 			SERVICE_ID,
 			TEMPLATE_ID,
 			templateParams,
-			{
-				publicKey: USER_KEY,
-			}
+			{	publicKey: USER_KEY	}
 		)
 		console.log('Email sent successfully!', response)
 	} catch (error) {
@@ -45,11 +39,11 @@ const submitForm = async () => {
 <template>
 	<main class="invest">
 		<section class="head w-full h-[42.5rem] grid grid-rows-2 justify-items-center">
-			<h2 class="self-end text-[12.5rem] uppercase text-pro-bold text-center leading-[69%]">
+			<h2 class="self-end text-[12.5rem] uppercase text-pro-bold text-center leading-[69%] relative top-[3.5rem]">
 				{{ $t('invest').split(' ')[0] }}<br>
 				{{ $t('invest').split(' ')[1] }}
 			</h2>
-			<h3 class="self-start text-[1.9rem] uppercase relative top-[5rem]">{{ $t('invest_h3') }}</h3>
+			<h3 class="self-start text-[2rem] uppercase relative top-[9rem] leading-none">{{ $t('invest_h3') }}</h3>
 		</section>
 
 		<section class="top grid grid-cols-[1fr_2fr]">
@@ -393,9 +387,6 @@ const submitForm = async () => {
 	color: var(--text-color);
 	padding: 0 !important;
 	line-height: 1rem !important;
-	
-	* {
-	}
 
 	&:focus {
 		outline: none;
@@ -415,5 +406,13 @@ const submitForm = async () => {
 .email-send {
 	font-size: 1.5rem !important;
 	border: 1px solid var(--text-color);
+	cursor: pointer;
+	transition: color 0.25s, border-color 0.25s;
+
+	&:hover,
+	&:active {
+		border-color: var(--link-color);
+		color: var(--link-color);
+	}
 }
 </style>

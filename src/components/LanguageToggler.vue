@@ -25,7 +25,7 @@ onMounted(async () => setLanguage(localStorage.getItem('lang') || (await getLang
       :key="index"
       @click="setLanguage(language)"
     >
-			<a role="button">
+			<a role="button" :class="{ selected : $i18n.locale === language }">
 				{{ language }}
 			</a>
     </li>
@@ -42,5 +42,9 @@ onMounted(async () => setLanguage(localStorage.getItem('lang') || (await getLang
 		border-left: 1px solid var(--text-color);
 		padding-inline: 0.33em;
 	}
+
+  .selected {
+    color: var(--link-color);
+  }
 }
 </style>

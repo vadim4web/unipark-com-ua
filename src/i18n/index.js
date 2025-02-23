@@ -4,14 +4,14 @@ const messages = {
 	uk: {
 		main: 'Головна',
 		ourParks: 'Наші парки',
-		
+
 		SINGING: 'Співуче',
 		MAGIC_GARDEN: 'Магічний Сад',
 		GIANTS_WORLD: 'Світ Велетнів',
 		TROLDOMY: 'Трольдоми',
 		LIGHT_AND_DREAMS: 'Light&Dreams',
 		FANTASTIC_PARK: 'Fantastic Park',
-		
+
 		production: 'Виробництво',
 		invest: 'Інвестиційна програма',
 		discount: 'Система лояльності',
@@ -21,17 +21,14 @@ const messages = {
 		toggleLangTip: 'Мова',
 
 		back: 'Повернутися',
-
 		contacts: 'КОНТАКТИ',
 		parks: 'НАШІ ПАРКИ',
 		address: 'Київ, вул. Лаврська 31',
 
 		invest_h3: 'Інвестиції в Юніверсал парк ЮА',
-
 		invest_top_left: 'про UNIVERSAL PARK',
 		invest_top_left_: 'у соціальних мережах',
 		invest_top_left_1: 'Адреса',
-
 		invest_top_right: 'Умови',
 		invest_top_right_: 'До 25% річних або індивідуальні умови в залежності від участі в проекті',
 		invest_top_right_1: 'Сума інвестицій',
@@ -41,22 +38,33 @@ const messages = {
 		invest_top_right_3: 'За рахунок чого будуть виплачуватися проценти',
 		invest_top_right_3_: 'Основний дохід компанії формується за рахунок вхідного квитка. Середня ціна квитка 225 грн з людини.',
 		invest_top_right_4: 'Кожен наш проект відвідує протягом року від 100 тисяч людей',
-
 		invest_mid_center: 'ФIНАНСОВа МОДЕЛь',
 		invest_mid_p1: 'вхiдний квиток',
 		invest_mid_p2: 'громадське харчування',
 		invest_mid_p3: 'сувенiрна продукцiя',
 		invest_mid_p4: 'спонсорськi пакети',
-
 		invest_stats: 'ПРИКЛАДИ ВIДВIДУВАНОСТI НАШИХ ПРОЄКТIВ',
 		invest_stats_upto: 'до',
 		invest_stats_peryear: 'в рік',
 		invest_stats_upto_: 'тисяч',
 		invest_stats_upto__: 'відвідувачів',
-
 		invest_CTA: 'є пропозиції? Звертайтеся!',
 		invest_CTA_mail: 'Твій email',
 		invest_CTA_send: 'ВІДПРАВИТИ',
+
+		discount_h3: 'Ми раді повідомити, що відтепер для Вас діє нова система лояльності з численними вигодами',
+		discount_mid_h3: 'Що дає система лояльності?',
+		discount_benefit_1: 'Знижку 10%',
+		discount_benefit_2: 'Ексклюзивні знижки',
+		discount_benefit_3: 'Розрахунок бонусами',
+		discount_benefit_4: 'актуальна інформація',
+		discount_benefit_1_: 'на покупку наступних квитків на заходи Universal park',
+		discount_benefit_2_: 'на групові квитки',
+		discount_benefit_3_: 'на території парку (бонуси діють на певну групу товарів)',
+		discount_benefit_4_: 'про заходи, що плануються в парку',
+		discount_CTA: 'реєструйся в пару кліків',
+		discount_CTA_: 'Перейдіть до телеграм бота й отримайте карту лояльності в декілька кліків',
+		discount_CTA_1: 'Телеграм бот',
 	},
 	en: {
 		main: 'Main',
@@ -71,51 +79,56 @@ const messages = {
 
 		production: 'Production',
 		invest: 'Investment Program',
-		discount: 'Loyalty Scheme',
+		discount: 'Loyalty System',
 		about: 'About Us',
 		toggleTheme_dark: 'To light theme',
 		toggleTheme_light: 'To dark theme',
 		toggleLangTip: 'Language',
-
 		back: 'Go back',
-
 		contacts: 'CONTACTS',
 		parks: 'OUR PARKS',
 		address: 'Kyiv, Lavrska St, 31',
 
 		invest_h3: 'Investments in Universal Park UA',
-
 		invest_top_left: 'about UNIVERSAL PARK',
 		invest_top_left_: 'on social networks',
 		invest_top_left_1: 'Address',
-
 		invest_top_right: 'Conditions',
 		invest_top_right_: 'Up to 25% per annum or individual conditions depending on participation in the project',
 		invest_top_right_1: 'Investment amount',
 		invest_top_right_1_: 'From $25,000',
 		invest_top_right_2: 'Guarantees',
 		invest_top_right_2_: 'We sign an investment agreement as well as a personal notarial agreement with the owner of the company',
-
 		invest_top_right_3: 'What will interest be paid for?',
 		invest_top_right_3_: 'The company\'s main income comes from admission tickets. The average ticket price is 225 UAH per person.',
 		invest_top_right_4: 'Each of our projects is visited by 100 thousand or more people per year',
-
 		invest_mid_center: 'FINANCIAL MODEL',
-
 		invest_mid_p1: 'entrance ticket',
 		invest_mid_p2: 'catering',
 		invest_mid_p3: 'souvenir products',
 		invest_mid_p4: 'sponsorship packages',
-
 		invest_stats: 'EXAMPLES OF THE VISIBILITY OF OUR PROJECTS',
 		invest_stats_upto: 'up to',
 		invest_stats_upto_: 'thousands',
 		invest_stats_upto__: 'of visitors',
 		invest_stats_peryear: 'per year',
-
 		invest_CTA: 'Have any suggestions? Contact us!',
 		invest_CTA_mail: 'Your email',
 		invest_CTA_send: 'SEND',
+
+		discount_h3: 'We are pleased to announce that from now on a new loyalty system with numerous benefits is available for you',
+		discount_mid_h3: 'What does the loyalty system provide?',
+		discount_benefit_1: '10% discount',
+		discount_benefit_2: 'Exclusive discounts',
+		discount_benefit_3: 'Payment with bonuses ',
+		discount_benefit_4: 'Up-to-date information',
+		discount_benefit_1_: 'for purchasing future tickets to Universal Park events',
+		discount_benefit_2_: 'for group tickets',
+		discount_benefit_3_: 'within the park (bonuses apply to a specific group of products)',
+		discount_benefit_4_: 'about upcoming events in the park',
+		discount_CTA: 'register in just a few clicks',
+		discount_CTA_: 'Go to the Telegram bot and get a loyalty card in just a few clicks',
+		discount_CTA_1: 'Telegram bot',
 	},
 }
 
