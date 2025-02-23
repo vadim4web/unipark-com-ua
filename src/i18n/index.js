@@ -65,6 +65,27 @@ const messages = {
 		discount_CTA: 'реєструйся в пару кліків',
 		discount_CTA_: 'Перейдіть до телеграм бота й отримайте карту лояльності в декілька кліків',
 		discount_CTA_1: 'Телеграм бот',
+
+		production_1: 'про виробництво',
+		production_2: 'Особливість',
+		production_3: 'Високі стандарти якості',
+		production_4: 'Сучасні технології',
+		production_5: 'Професійна команда',
+		production_6: 'Індивідуальний підхід',
+		production_1_: 'Наше виробництво — це поєднання передових технологій, високої якості та бездоганного сервісу. Ми пишаємося тим, що кожен етап нашого виробничого процесу спрямований на створення елементів, які відповідають найвищим стандартам.',
+		production_2_: 'Ми маємо багаторічний досвід створення фігур з аніматронікою найвищої якості, а також створення тематичних інсталяцій і елементів декору «під ключ».',
+		production_3_: 'Ми використовуємо лише найкращі матеріали, що гарантує надійність і довговічність наших виробів. Кожен екземпляр проходить суворий контроль якості на всіх етапах виробництва, що забезпечує відповідність вимогам.',
+		production_4_: 'Наше обладнання — це сучасні технологічні рішення, що дозволяють нам досягати високої продуктивності та точності у виробництві. Ми постійно інвестуємо в оновлення нашого обладнання та впровадження інновацій, що дозволяє нам залишатися на передовій галузі.',
+		production_5_: 'Наша команда — це висококваліфіковані фахівці, які мають багаторічний досвід роботи у своїй сфері. Вони з пристрастю та відданістю виконують свою роботу, забезпечуючи найвищий рівень обслуговування.',
+		production_6_: 'Ми розуміємо, що кожен виріб унікальний. Тому ми застосовуємо індивідуальні рішення, що дозволяють максимально задовольнити очікування для кожного проєкту. Від проектування до фінального продукту — ми працюємо, щоб забезпечити найкращий результат.',
+
+		production_AZ: 'створені нами парки',
+
+		SINGING_: 'Сімейний парк відпочинку, де кожен може знайти собі заняття. На території організовані зони дозвілля та відпочинку сімейного типу, різноманітні квіткові інсталяції та фотозони',
+		TROLDOMY_: 'Новий унікальний парк світового масштабу з оригінальним дизайн-контентом та справжньою сюжетною історією. Головні персонажі надзвичайно милі та яскраві трольдоми, які рухаються та говорять з відвідувачами',
+		LIGHT_AND_DREAMS_: 'Цей унікальний парк ілюмінацій та масштабних світлових інсталяцій має на меті створити справжній тематичний простір з казковими героями, незабутніми локаціями та яскравими фотозонами',
+		GIANTS_WORLD_: 'Тематичний парк з фігурами заввишки від 3 до 5 метрів. Головні герої парку — добрі та злі велетні з легенди про Долину Туманів, що «оживають» за допомогою аніматроніки, а також розмовляють з гостями голосами відомих українців',
+		MAGIC_GARDEN_: 'Проект «Магічний Сад» – тематичний парк із казковими героями, масштабними квітковими інсталяціями та яскравими фотозонами, де кожен відвідувач зможе відчути себе частиною історії.',
 	},
 	en: {
 		main: 'Main',
@@ -129,6 +150,27 @@ const messages = {
 		discount_CTA: 'register in just a few clicks',
 		discount_CTA_: 'Go to the Telegram bot and get a loyalty card in just a few clicks',
 		discount_CTA_1: 'Telegram bot',
+
+		production_1: 'about production',
+		production_2: 'Feature',
+		production_3: 'High-quality standards',
+		production_4: 'Modern technologies',
+		production_5: 'Professional team',
+		production_6: 'Individual approach',
+		production_1_: 'Our production is a combination of advanced technologies, high quality, and impeccable service. We take pride in ensuring that every stage of our manufacturing process is aimed at creating elements that meet the highest standards.',
+		production_2_: 'We have many years of experience in creating high-quality animatronic figures, as well as designing themed installations and turnkey decorative elements.',
+		production_3_: 'We use only the best materials, ensuring reliability and durability. Each product undergoes rigorous quality control at all stages of production to meet the required standards.',
+		production_4_: 'Our equipment features cutting-edge technological solutions that enable us to achieve high productivity and precision in manufacturing. We continuously invest in upgrading our equipment and implementing innovations to stay at the forefront of the industry.',
+		production_5_: 'Our team consists of highly qualified specialists with many years of experience in their fields. They work with passion and dedication, providing the highest level of service.',
+		production_6_: 'We understand that every product is unique. That is why we offer customized solutions tailored to meet the expectations of each project. From design to final production, we ensure the best possible result.',
+
+		production_AZ: 'parks created by us',
+
+		SINGING_: 'A family recreation park where everyone can find something to do. The territory has organized family-type leisure and recreation areas, various flower installations and photo zones.',
+		TROLDOMY_: 'A new, unique world-class park featuring original design content and a true storyline. The main characters are incredibly charming and vibrant Troldomy creatures that move and interact with visitors.',
+		LIGHT_AND_DREAMS_: 'This unique park of illuminations and large-scale light installations is designed to create a truly themed space with fairytale characters, unforgettable locations, and vibrant photo zones.',
+		GIANTS_WORLD_: 'A themed park with figures ranging from 3 to 5 meters in height. The main characters are good and evil giants from the legend of the Valley of Mists, who come to life through animatronics and interact with visitors using voices of famous Ukrainians.',
+		MAGIC_GARDEN_: 'The "Magical Garden" project is a theme park with fairy tale characters, large-scale flower installations and bright photo zones where every visitor can feel like a part of the story. ',
 	},
 }
 

@@ -121,7 +121,7 @@
 							}}</router-link>
 						</li>
 						<li>
-							<router-link to="/parks/light-n-dreams">{{
+							<router-link to="/parks/light-and-dreams">{{
 								$t('LIGHT_AND_DREAMS')
 							}}</router-link>
 						</li>

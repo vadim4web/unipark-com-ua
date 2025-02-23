@@ -11,7 +11,7 @@ const routes = [
 			{ path: 'singing', component: () => import('~/views/parks/SingingPark.vue') },
 			{ path: 'troldomy', component: () => import('~/views/parks/TroldomyPark.vue') },
       { path: 'giants-world', component: () => import('~/views/parks/GiantsWorldPark.vue') },
-      { path: 'light-n-dreams', component: () => import('~/views/parks/LightAndDreamsPark.vue') },
+      { path: 'light-and-dreams', component: () => import('~/views/parks/LightAndDreamsPark.vue') },
       { path: 'magic-garden', component: () => import('~/views/parks/MagicGardenPark.vue') },
       { path: 'fantastic-park', component: () => import('~/views/parks/FantasticPark.vue') },
     ],

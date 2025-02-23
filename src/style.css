@@ -67,7 +67,9 @@
   --accent: #C5D435;
   --text-color-gray: #7d7d7d;
   --gradient-bg: linear-gradient(0deg, #cfd71d, #0bb2ac);
+  --gradient-bg-13: linear-gradient(13deg, #cfd71d, #0bb2ac);
   --gradient-bg-45: linear-gradient(45deg, #cfd71d, #0bb2ac);
+  --gradient-bg-225: linear-gradient(225deg, #cfd71d, #0bb2ac);
   --header-height: max(80px);
   --footer-height: max(400px);
   color: var(--text-color);

@@ -1,39 +1,11 @@
 <script setup>
-import { ref } from 'vue'
-import emailjs from '@emailjs/browser'
-
+import { defineAsyncComponent } from 'vue'
 import TICKETS from '~/assets/icons/TICKETS.png'
 import CATERING from '~/assets/icons/CATERING.png'
 import SOUVENIRS from '~/assets/icons/SOUVENIRS.png'
 import PROMO from '~/assets/icons/PROMO.png'
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const USER_KEY = import.meta.env.VITE_EMAILJS_USER_KEY
-
-const email = ref('')
-
-const submitForm = async () => {
-	const emailString = `${email.value}`
-
-	try {
-		const templateParams = {
-			email: emailString,
-		}
-
-		const response = await emailjs.send(
-			SERVICE_ID,
-			TEMPLATE_ID,
-			templateParams,
-			{	publicKey: USER_KEY	}
-		)
-		console.log('Email sent successfully!', response)
-	} catch (error) {
-		console.error('Error sending email:', error)
-	}
-
-	email.value = ''
-}
+const RequestEmailForm = defineAsyncComponent(() => import('~/components/RequestEmailForm.vue'))
 </script>
 
 <template>
@@ -244,39 +216,7 @@ const submitForm = async () => {
 			</div>
 		</section>
 
-		<section class="call-to-action flex flex-col items-center gap-[2.5rem]">
-			<h2 class="text-[7rem] text-pro-bold leading-none">
-				{{ $t('invest_CTA') }}
-			</h2>
-
-			<div class="feedback flex w-[88ch] h-[2.5rem] items-center justify-between gap-[0.5rem]">
-				<form class="form flex h-[2.5rem] items-center justify-between gap-[0.5rem]" @submit.prevent="submitForm">
-					<label :data-text="$t('invest_CTA_mail')" class="form-label relative">
-						<input
-							v-model="email"
-							aria-label="email-input"
-							required
-							type="email"
-							class="email-input w-[28ch] h-[1.5rem] relative bottom-[-0.51rem]"
-							placeholder="mail@example.com"
-						/>
-					</label>
-
-					<button type="submit" class="email-send w-[7.5rem] h-[2.5rem] text-pro-bold">
-						{{ $t('invest_CTA_send') }}
-					</button>
-				</form>
-
-				<a href="tel:+380981564340" class="h-[2.5rem] text-pro-bold text-[2rem] leading-[2.5rem]">+38 098 156 43 40</a>
-
-				<a
-					:href="`mailto:finance@universal-parks.com?subject=${encodeURIComponent(
-						'FEEDBACK REQUEST from ' + email
-					)}`"
-					class="h-[2.5rem] text-pro-bold text-[2rem] leading-[2.5rem]"
-				>finance@universal-parks.com</a>
-			</div>
-		</section>
+		<request-email-form mode="finance" />
 	</main>
 </template>
 
@@ -364,54 +304,6 @@ const submitForm = async () => {
 	}
 
 	.thouthends {
-		color: var(--link-color);
-	}
-}
-
-.call-to-action {
-	padding-block: 6.75rem;
-}
-
-.form-label::before {
-	position: absolute;
-	content: attr(data-text);
-	top: -1rem;
-	left: 0;
-}
-
-.email-input {
-	cursor: pointer;
-	background: transparent !important;
-	border-width: 1px;
-	border-color: transparent transparent var(--text-color) transparent;
-	color: var(--text-color);
-	padding: 0 !important;
-	line-height: 1rem !important;
-
-	&:focus {
-		outline: none;
-		border: none none auto none;
-	}
-}
-
-.email-input:-webkit-autofill,
-.email-input:-webkit-autofill:hover,
-.email-input:-webkit-autofill:focus,
-.email-input:-webkit-autofill:active {
-	background-clip: text !important;
-	-webkit-background-clip: text !important;
-	-webkit-text-fill-color: var(--text-color) !important;
-}
-
-.email-send {
-	font-size: 1.5rem !important;
-	border: 1px solid var(--text-color);
-	cursor: pointer;
-	transition: color 0.25s, border-color 0.25s;
-
-	&:hover,
-	&:active {
-		border-color: var(--link-color);
 		color: var(--link-color);
 	}
 }

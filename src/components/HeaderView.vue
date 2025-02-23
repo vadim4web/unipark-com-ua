@@ -33,7 +33,7 @@ const parksMenuToggle = () => {
             {{ $t('main') }}
           </router-link>
         </li>
-        <li class="parks">
+        <li v-click-outside="parksMenuClose" class="parks">
           <ul>
             <li>
               <a role="button" style="cursor: pointer" @click="parksMenuToggle">
@@ -66,7 +66,7 @@ const parksMenuToggle = () => {
                 </li>
                 <li>
                   <router-link
-                    to="/parks/light-n-dreams"
+                    to="/parks/light-and-dreams"
                     @click="parksMenuClose"
                     >{{ $t('LIGHT_AND_DREAMS') }}</router-link>
                 </li>
@@ -165,6 +165,7 @@ const parksMenuToggle = () => {
 <style lang="scss">
 header {
   width: 100%;
+  background: var(--bg-color);
 
   nav {
     width: 100%;
@@ -196,15 +197,17 @@ header {
 
       .parks-list {
         position: absolute;
+        z-index: 1;
       }
 
       & .parks-list:not(.open) {
         opacity: 0;
       }
 
-      & .open.parks-list,
       & .open.parks-list {
         opacity: 1;
+        background: var(--bg-color);
+        padding-bottom: 0.5rem;
       }
     }
   }
