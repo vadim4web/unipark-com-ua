@@ -96,7 +96,7 @@ const parksMenuToggle = () => {
         </li>
       </menu>
 
-      <menu class="extra flex justify-center items-center">
+      <menu class="extra flex justify-center items-center gap-1">
         <li>
           <router-link to="/invest" @click="parksMenuClose">
             <svg
@@ -218,7 +218,6 @@ header {
 
   .extra {
     height: var(--header-height);
-    gap: 1rem;
 
     * {
       border: 1px solid transparent;

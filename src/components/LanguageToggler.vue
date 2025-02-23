@@ -3,12 +3,12 @@ import { onMounted } from 'vue'
 import i18n from '~/i18n'
 import { getIP } from '~/helpers'
 
-const getLanguage = async () => (await getIP()).country.iso_code === 'UA' ? 'uk' : 'en'
-
 const setLanguage = lang => {
-  i18n.global.locale = lang
+  i18n.global.locale.value = lang
   localStorage.setItem('lang', lang)
 }
+
+const getLanguage = async () => (await getIP()).country.iso_code === 'UA' ? 'uk' : 'en'
 
 onMounted(async () => setLanguage(localStorage.getItem('lang') || (await getLanguage())))
 </script>
