@@ -22,7 +22,7 @@ const parksMenuToggle = () => {
 </script>
 
 <template>
-  <header>
+  <header class="relative">
     <nav class="flex justify-center items-center">
       <router-link to="/" class="logo-link" @click="parksMenuClose">
 				<img src="/UNIPARK.png" alt="UniPark logo" class="logo-image">
@@ -164,6 +164,7 @@ const parksMenuToggle = () => {
 
 <style lang="scss">
 header {
+  z-index: 2;
   width: 100%;
   background: var(--bg-color);
 
