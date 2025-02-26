@@ -49,7 +49,7 @@ onMounted(() => {
     <li v-for="(park, index) in parks" :key="index" :data-index="index" class="flex flex-col park-item" :class="{ open: park.isOpen }">
       <div v-if="park.images.length" class="grid grid-cols-3" @click="toggleMenu(index)">
         <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">{{ $t(park.name) }}</h3>
-        <p class="whitespace-pre-line leading-[120%] w-[35ch]">{{ $t(park.description) }}</p>
+        <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
         <div class="flex items-center justify-end button-wrapper">
           <button class="flex items-center justify-center">
             <svg viewBox="0 0 25 25" stroke-width="3" stroke="var(--text-color-gray)">
@@ -62,7 +62,7 @@ onMounted(() => {
 
       <a v-else :href="`/parks/${park.slug}`" role="button" class="grid grid-cols-3">
         <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">{{ $t(park.name) }}</h3>
-        <p class="whitespace-pre-line">{{ $t(park.description) }}</p>
+        <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
       </a>
 
       <div v-if="park.images.length" class="image-grid-wrapper grid grid-cols-3 gap-[1.75rem]">
@@ -83,6 +83,18 @@ onMounted(() => {
   padding: 3rem 3rem 0;
   cursor: pointer;
   overflow: hidden;
+}
+
+.parks-list li:last-of-type {
+  position: relative;
+  overflow: visible;
+}
+
+.parks-list li:after {
+  content: '';
+  bottom: -3rem;
+  position: relative;
+  border-bottom: 1px solid var(--text-color-gray-25);
 }
 
 .image-grid-wrapper {

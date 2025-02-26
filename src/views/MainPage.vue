@@ -3,6 +3,9 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import MainParksSlider from '~/components/MainParksSlider.vue'
 import BouncingText from '~/components/BouncingText.vue'
 import MainParksAccordion from '~/components/MainParksAccordion.vue'
+import ProductionAnimation from '~/components/ProductionAnimation.vue'
+import TeamCollage from '~/components/TeamCollage.vue'
+
 import { useWindowScroll } from '@vueuse/core'
 
 const mainInfo = ref()
@@ -35,10 +38,37 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 				class="text-pro-bold text-[13rem] tracking-wide"
 			/>
 
-			<main-parks-accordion/>
+			<main-parks-accordion />
 		</section>
 
-		<section class="production-overview"></section>
+		<section class="production-overview flex flex-col items-center text-center">
+			<h2 class="text-pro-bold text-[4.5rem] w-[35ch] leading-[133%] whitespace-pre-line">
+				{{ $t('main_prod_over') }}
+			</h2>
+			<h3 class="text-pro-bold text-[10rem] leading-[133%] relative w-[17ch]">
+				<bouncing-text
+					:text-to-animate="$t('our_production')"
+					class="text-pro-bold text-[10rem] leading-[133%] relative w-[17ch]"
+					:wrapper-tag="p"
+					:max-lift="20"
+					:max-scale="1.3"
+				/>
+				<router-link to="/production" class="flex items-center justify-center absolute details text-[1.5rem] rounded-full w-[10rem] h-[10rem] text-regular tracking-wider">
+					{{ $t('details') }}
+				</router-link>
+			</h3>
+
+			<production-animation />
+		</section>
+
+		<section class="team flex flex-col items-center text-center">
+			<h3 class="text-pro-bold text-[5rem] w-[30ch]">
+				{{ $t('our_team_')}}
+			</h3>
+
+
+			<team-collage />
+		</section>
 	</main>
 </template>
 
@@ -62,8 +92,41 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 	}
 }
 
-.parks-overview,
-.production-overview {
+.parks-overview {
 	min-height: calc(51.5rem);
+}
+
+.production-overview {
+	padding-top: 12rem;
+	margin-top: 11.5rem;
+	min-height: 100vh;
+	background: var(--gradient-bg-45);
+	width: calc(100vw - 0.5rem);
+	color: var(--bg-color);
+
+	h3 {
+		padding-top: 5.5rem;
+
+		.details {
+			top: 1.5rem;
+			right: 4.5rem;
+			color: var(--bg-color);
+			background: var(--accent);
+			transform: rotate(-15deg);
+			transition: background 0.25s;
+
+			&:hover {
+				background: var(--text-color);
+			}
+		}
+	}
+}
+
+.team {
+	min-height: 100vh;
+	padding-top: 3.5rem;
+
+	h2 {
+	}
 }
 </style>
