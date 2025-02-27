@@ -1,0 +1,1 @@
+import{c as s,k as r,b as c,t as e,u as n,M as u,N as l,o as i}from"./index-D4WBOrqe.js";const _={class:"flex flex-col justify-center items-center"},m={__name:"ErrorPage",setup(p){const t=l(),a=()=>t.back();return(o,f)=>(i(),s("main",_,[r(" 404 ⛔ "+e(n(u)().path)+" ",1),c("a",{role:"button",onClick:a},e(o.$t("back")),1)]))}};export{m as default};
