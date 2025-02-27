@@ -18,9 +18,9 @@ const Products4View = defineAsyncComponent(
 
 <template>
   <main class="production">
-    <section class="head flex justify-center items-center">
+    <section class="head flex justify-center items-center overflow-hidden">
       <h2
-        class="text-pro-bold text-[12.5rem] text-center relative leading-[137.5%]"
+        class="top-text text-pro-bold text-[12.5rem] text-center relative leading-[137.5%]"
       >
         {{ $t('production') }}
       </h2>
@@ -124,7 +124,12 @@ const Products4View = defineAsyncComponent(
 
   h2 {
     color: #fff;
-    transform: translateY(-50%);
+    transform: translateY(-75vh);
+    -webkit-transform: translateY(-75vh);
+    -moz-transform: translateY(-75vh);
+    -ms-transform: translateY(-75vh);
+    -o-transform: translateY(-75vh);
+    opacity: 0;
   }
 }
 

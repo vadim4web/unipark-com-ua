@@ -10,12 +10,12 @@ const RequestEmailForm = defineAsyncComponent(() => import('~/components/Request
 
 <template>
 	<main class="invest">
-		<section class="head w-full h-[42.5rem] grid grid-rows-2 justify-items-center">
-			<h2 class="self-end text-[12.5rem] uppercase text-pro-bold text-center leading-[69%] relative top-[3.5rem]">
+		<section class="head w-full h-[42.5rem] grid grid-rows-2 justify-items-center overflow-hidden">
+			<h2 class="top-text self-end text-[12.5rem] uppercase text-pro-bold text-center leading-[69%] relative top-[3.5rem]">
 				{{ $t('invest').split(' ')[0] }}<br>
 				{{ $t('invest').split(' ')[1] }}
 			</h2>
-			<h3 class="self-start text-[2rem] uppercase relative top-[9rem] leading-none">{{ $t('invest_h3') }}</h3>
+			<h3 class="bottom-text self-start text-[2rem] uppercase relative top-[9rem] leading-none">{{ $t('invest_h3') }}</h3>
 		</section>
 
 		<section class="top grid grid-cols-[1fr_2fr]">
@@ -224,6 +224,24 @@ const RequestEmailForm = defineAsyncComponent(() => import('~/components/Request
 .head {
 	background: var(--gradient-bg);
 	color: #fff;
+
+	h2 {
+		transform: translateY(-75vh);
+		-webkit-transform: translateY(-75vh);
+		-moz-transform: translateY(-75vh);
+		-ms-transform: translateY(-75vh);
+		-o-transform: translateY(-75vh);
+		opacity: 0;
+	}
+
+	h3 {
+		transform: translateY(75vh);
+		-webkit-transform: translateY(75vh);
+		-moz-transform: translateY(75vh);
+		-ms-transform: translateY(75vh);
+		-o-transform: translateY(75vh);
+		opacity: 0;
+	}
 }
 
 .top {

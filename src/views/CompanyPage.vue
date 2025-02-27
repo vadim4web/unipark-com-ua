@@ -11,8 +11,8 @@ const RequestEmailForm = defineAsyncComponent(
 
 <template>
 	<main class="company">
-		<section class="head flex flex-col items-center justify-center">
-			<h2 class="text-center text-[5rem] text-pro-bold">
+		<section class="head flex flex-col items-center justify-center overflow-hidden">
+			<h2 class="text-center text-[12.5rem] text-pro-bold top-text">
 				{{ $t('about') }}
 			</h2>
 		</section>
@@ -160,6 +160,12 @@ const RequestEmailForm = defineAsyncComponent(
 
 	h2 {
 		color: var(--bg-color);
+		transform: translateY(-75vh);
+		-webkit-transform: translateY(-75vh);
+		-moz-transform: translateY(-75vh);
+		-ms-transform: translateY(-75vh);
+		-o-transform: translateY(-75vh);
+		opacity: 0;
 	}
 }
 

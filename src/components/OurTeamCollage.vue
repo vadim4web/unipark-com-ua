@@ -64,7 +64,7 @@ onMounted(() => {
       if (idx !== 0) {
         gsap.fromTo(
           person, 
-          { opacity: 0, yPercent: 150 },
+          { opacity: 0, yPercent: 100 },
           { 
             opacity: 1, 
             yPercent: -100, 
@@ -102,7 +102,7 @@ onMounted(() => {
       if (idx !== 0) {
         gsap.fromTo(
           person, 
-          { opacity: 0, yPercent: 150 },
+          { opacity: 0, yPercent: 100 },
           { 
             opacity: 1, 
             yPercent: -50, 

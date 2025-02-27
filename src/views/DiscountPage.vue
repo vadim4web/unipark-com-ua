@@ -8,12 +8,12 @@ import telegram from '~/assets/icons/telegram.svg'
 
 <template>
 	<main class="discount">
-		<section class="head w-full h-[42.5rem] grid grid-rows-2 justify-items-center text-center">
-			<h2 class="self-end text-[12.5rem] uppercase text-pro-bold leading-[69%] relative top-[3.5rem]">
+		<section class="head w-full h-[42.5rem] grid grid-rows-2 justify-items-center text-center overflow-hidden">
+			<h2 class="top-text self-end text-[12.5rem] uppercase text-pro-bold leading-[69%] relative top-[3.5rem]">
 				{{ $t('discount').split(' ')[0] }}<br>
 				{{ $t('discount').split(' ')[1] }}
 			</h2>
-			<h3 class="self-start text-[2rem] uppercase relative top-[9rem] w-[36ch] leading-none">{{ $t('discount_h3') }}</h3>
+			<h3 class="bottom-text self-start text-[2rem] uppercase relative top-[9rem] w-[36ch] leading-none">{{ $t('discount_h3') }}</h3>
 		</section>
 		<section class="main-info flex flex-col items-center">
 			<h3 class="text-pro-bold text-[6.25rem] w-[20ch] text-center leading-none">
@@ -57,6 +57,24 @@ import telegram from '~/assets/icons/telegram.svg'
 .head {
 	background: var(--gradient-bg);
 	color: #fff;
+
+	h2 {
+		transform: translateY(-75vh);
+		-webkit-transform: translateY(-75vh);
+		-moz-transform: translateY(-75vh);
+		-ms-transform: translateY(-75vh);
+		-o-transform: translateY(-75vh);
+		opacity: 0;
+	}
+
+	h3 {
+		transform: translateY(75vh);
+		-webkit-transform: translateY(75vh);
+		-moz-transform: translateY(75vh);
+		-ms-transform: translateY(75vh);
+		-o-transform: translateY(75vh);
+		opacity: 0;
+	}
 }
 
 .main-info,

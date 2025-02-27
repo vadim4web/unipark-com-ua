@@ -24,10 +24,37 @@ const messages = {
 		toggleLangTip: 'Мова',
 		loading: 'Грузимо...',
 		back: 'Повернутися',
+		buy: 'Купити квитки',
 		details: 'детально',
 		contacts: 'КОНТАКТИ',
 		parks: 'НАШІ ПАРКИ',
 		address: 'Київ, вул. Лаврська 31',
+
+		singing1: "Співоче є одним із наймальовничіших куточків столиці, адже розмістилося воно на Печерських пагорбах, в самому серці зеленого Києва.",
+		singing2: "Це місце стало справжнім туристичним якорем та улюбленою локацією сімейного дозвілля, відомою унікальними івентами та культурними подіями.",
+		singing3: "'СПІВОЧЕ' це сімейний парк відпочинку, де кожен може знайти собі заняття. На території організовані зони дозвілля та відпочинку сімейного типу, різноманітні квіткові інсталяції та фотозони. Панорамні схили парку оповиті справжньою зеленою ковдрою із сотень видів дерев, кущів, квітів та інших рослин. З оглядових майданчиків відкривається фантастичний краєвид на Дніпро та лівий берег Києва.",
+
+		magic_garden1: "Проєкт «Магічний сад» — це справжній тематичний парк із казковими героями, масштабними квітковими інсталяціями та яскравими фотозонами, де кожен відвідувач зможе відчути себе частиною історії.",
+    magic_garden2: "Головні герої парку – добрі та злі персонажі легенд про міфічних створінь, що оберігають Землю. Загалом виставка передбачає близько 35 об'ємних 3D фігур, а також понад десятки тисяч квітів. Голосом проєкту став народний артист України, відомий актор театру та кіно Богдан Бенюк.",
+    magic_garden3: "Кожен куточок парку сповнений чарів та фантазії, створюючи неповторну атмосферу, яка дарує незабутні емоції і дітям, і дорослим.",
+
+		giants_world1: "«Світ Велетнів» не має аналогів у світі. Головні герої парку — добрі та злі велетні з легенди про Долину Туманів, що «оживають» за допомогою аніматроніки, а також розмовляють з гостями голосами відомих українців.",
+    giants_world2: "У цьому тематичному парку навіть дорослі можуть про все забути і знову відчути себе маленькими мрійниками. Анімовані фігури велетнів заввишки понад 4 метри, інтерактивні розваги, шоу аніматорів, програма з акторами та спілкування з відвідувачами парку — це все те, що чекає на відвідувачів.",
+    giants_world3: "Особливість цього парку полягає в тому, що фігури велетнів не лише рухаються, але й розмовляють завдяки сучасним технологіям аніматроніки. Кожен герой має свою особливу місію, що додає унікальності цьому казковому світу.",
+    giants_world4: "Крім того, гості можуть взяти участь у захоплюючих квестах, досліджуючи загадкові куточки парку та розгадуючи таємниці велетнів. Для наймолодших відвідувачів створено спеціальні ігрові зони та майстер-класи, де вони зможуть власноруч створювати свої маленькі шедеври.",
+    giants_world5: "«Світ Велетнів» — це місце, де мрії стають реальністю, де кожен знайде для себе щось особливе і незабутнє.",
+
+		troldom1: "Трольдоми — це новий унікальний парк світового масштабу з оригінальним дизайн-контентом та справжньою сюжетною історією. Це живий світ, у який можуть поринути і дорослі, і діти.",
+    troldom2: "За легендою, трольдоми рятують життя кожній дитині, яка народжується у поселенні. Отже, трольдоми — це охоронці дітей. Фігури трольдомів заввишки сягають від метра до чотирьох метрів, найвища фігура — чотири метри. У парку також є малюсінький трольдом і закохана парочка — Арарін і Молобур.",
+    troldom3: "Найцікавіше, що фігури трольдомів не лише рухаються (мають вмонтовану аніматроніку), а й розмовляють. Кожен має свій унікальний голос та місію.",
+    troldom4: "«Я завжди радий новим друзям, — говорить Окоран, вартовий башти Тіньозора. — У мене лише одне око, але воно бачить далеко і чітко. Тому я й стою на варті трольдомів…».",
+    troldom5: "Окрім самих фігур, парк має унікальні тематичні локації, які до вподоби не тільки дітям, а й дорослим. На території є «тунелі бажань», які стануть для відвідувачів гарною фотозоною, зони з майстер-класами, інтерактивні гойдалки.",
+    troldom6: "Важливою частиною парку є оригінальна авторська вистава, за допомогою якої можна дізнатись та побачити найголовніше — історію трольдомів. Трольдоми запрошують вас у дивовижну подорож, де кожна стежка розповідає нову історію, а кожен крок відкриває нові пригоди.",
+
+		light_and_dreams1: "Парк світлових фігур «Lights&Dreams», який вже встигли полюбити мільйони українців та за кордоном. Цей унікальний парк ілюмінацій та масштабних світлових інсталяцій має на меті створити справжній тематичний простір з казковими героями, незабутніми локаціями та яскравими фотозонами. Він побував у країнах Балтії та Туреччині.",
+    light_and_dreams2: "Кожна інсталяція у парку сягає до 7 метрів у висоту, що робить їх справжніми витворами мистецтва. Тематичні локації парку є частиною легенди про паралельний світ, де панують феї, ельфи та дракони. Провідником у цей дивовижний світ виступає магічна лампа.",
+    light_and_dreams3: "Відвідувачі мають змогу насолодитися понад 30 ілюмінаційними локаціями, серед яких: «Ліс казкових фей та ельфів», «Тунель закоханих», «Магічні коти», «Золотий дракон» та інші. На гостей чекає незабутня подорож за межами уяви, що включає унікальні інтерактивні розваги, зони дозвілля для дорослих та дітей, стилізовані фотозони, шоу аніматорів та гастрономічні заклади.",
+    light_and_dreams4: "Важливо зазначити, що світлові фігури працюють в енергозберігальному режимі, споживаючи лише 20 кВт на годину. Крім ілюмінацій, парк пропонує інтерактивні зони дозвілля, зони відпочинку та театралізовані виступи акторів.",
 		
 		header: 'UniPark - українська компанія, яка працює над створенням проєктів з 2015 року.',
 		header_: 'Наша особливість полягає в тому, що кожен наш тематичний парк є унікальним і має свою особливу історію.',
@@ -155,7 +182,7 @@ const messages = {
 		main: 'Main',
 		ourParks: 'Our Parks',
 
-		SINGING: 'Singing',
+		SINGING: 'Spivoche',
 		MAGIC_GARDEN: 'Magic Garden',
 		GIANTS_WORLD: 'Giants’ World',
 		TROLDOMY: 'Troldomy',
@@ -175,9 +202,36 @@ const messages = {
 		loading: 'Loading...',
 		back: 'Go back',
 		details: 'details',
+		buy: 'Buy tickets',
 		contacts: 'CONTACTS',
 		parks: 'OUR PARKS',
 		address: 'Kyiv, Lavrska St, 31',
+
+		singing1: "Spivoche is one of the most picturesque corners of the capital, located on the Pechersk hills, in the heart of green Kyiv.",
+		singing2: "This place has become a true tourist anchor and a favorite family leisure spot, known for its unique events and cultural activities.",
+		singing3: "'SPIVOCHE' is a family recreation park where everyone can find an activity. The area is organized into family-friendly leisure zones, various flower installations, and photo zones. The panoramic slopes of the park are covered with a true green blanket of hundreds of tree, bush, flower, and other plant species. From the viewing platforms, there is a fantastic view of the Dnieper and the left bank of Kyiv.",
+
+		magic_garden1: "The 'Magic Garden' project is a true theme park with fairy-tale characters, large floral installations, and vibrant photo zones, where every visitor can feel like part of the story.",
+    magic_garden2: "The main characters of the park are the good and evil characters from legends about mythical creatures that protect the Earth. The exhibition includes about 35 large 3D figures and over tens of thousands of flowers. The voice of the project was the People's Artist of Ukraine, famous theater and film actor Bohdan Benyuk.",
+    magic_garden3: "Every corner of the park is filled with magic and fantasy, creating a unique atmosphere that gives unforgettable emotions to both children and adults.",
+
+		giants_world1: "'The World of Giants' has no analogs in the world. The main heroes of the park are the good and evil giants from the legend of the Valley of Mists, who 'come to life' with animatronics and also speak to guests with the voices of famous Ukrainians.",
+    giants_world2: "In this theme park, even adults can forget about everything and feel like little dreamers again. Animated giant figures over 4 meters tall, interactive entertainment, animator shows, programs with actors, and communication with park visitors — all this awaits the visitors.",
+    giants_world3: "The uniqueness of this park lies in the fact that the giant figures not only move but also talk thanks to modern animatronic technology. Each hero has its own special mission, adding uniqueness to this fairy-tale world.",
+    giants_world4: "Moreover, guests can participate in exciting quests, exploring the mysterious corners of the park and solving the giants' secrets. For the youngest visitors, special play zones and workshops have been created where they can make their own little masterpieces.",
+    giants_world5: "'The World of Giants' is a place where dreams come true, where everyone can find something special and unforgettable.",
+
+		troldom1: "Troldoms is a new unique world-class park with original design content and a real story. It is a living world where both adults and children can immerse themselves.",
+    troldom2: "According to the legend, the troldoms save the lives of every child born in the settlement. Thus, the troldoms are the guardians of children. The figures of troldoms range in height from one meter to four meters, with the tallest figure being four meters. The park also features a tiny troldom and a loving couple — Ararin and Molobur.",
+    troldom3: "The most interesting thing is that the troldom figures not only move (they are equipped with animatronics), but they also speak. Each one has its unique voice and mission.",
+    troldom4: "‘I am always happy to meet new friends,’ says Okoran, the guardian of the Shadow Tower. ‘I only have one eye, but it sees far and clearly. That’s why I stand guard over the troldoms…’",
+    troldom5: "In addition to the figures themselves, the park features unique thematic locations that appeal to both children and adults. There are 'wish tunnels' which will make for great photo zones, masterclass areas, and interactive swings.",
+    troldom6: "The park also features an original author's performance that reveals the most important thing — the history of the troldoms. Troldoms invites you on a fascinating journey, where every path tells a new story, and every step opens new adventures.",
+
+		light_and_dreams1: "'Lights&Dreams' is a light figure park loved by millions of Ukrainians and people abroad. This unique park of illuminations and large-scale light installations aims to create a true thematic space with fairy-tale characters, unforgettable locations, and vibrant photo zones. It has visited the Baltic States and Turkey.",
+    light_and_dreams2: "Each installation in the park reaches up to 7 meters in height, making them true works of art. The park's thematic locations are part of a legend about a parallel world ruled by fairies, elves, and dragons. The guide to this amazing world is a magical lamp.",
+    light_and_dreams3: "Visitors can enjoy more than 30 illuminated locations, including: 'The Forest of Fairy Fairies and Elves', 'The Tunnel of Lovers', 'Magical Cats', 'The Golden Dragon', and others. Guests are in for an unforgettable journey beyond imagination, including unique interactive entertainment, leisure zones for both adults and children, styled photo zones, animator shows, and dining establishments.",
+    light_and_dreams4: "It is important to note that the light figures operate in energy-saving mode, consuming only 20 kW per hour. In addition to illuminations, the park offers interactive leisure zones, rest areas, and theatrical performances by actors.",
 
 		header: 'UniPark is a Ukrainian company that has been working on creating projects since 2015.',
 		header_: 'Our specialty is that each of our theme parks is unique and has its own special story.',
