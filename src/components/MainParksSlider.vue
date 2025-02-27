@@ -6,19 +6,19 @@ import 'vueperslides/dist/vueperslides.css'
 const slides = [
   {
     image: '/img/Slide_1.jpg',
-    link: '/parks/light-and-dreams'
+    link: '/light-and-dreams'
   },
   {
     image: '/img/Slide_2.jpg',
-    link: '/parks/magic-garden'
+    link: '/magic-garden'
   },
   {
     image: '/img/Slide_3.jpg',
-    link: '/parks/giants-world'
+    link: '/giants-world'
   },
   {
     image: '/img/Slide_4.jpg',
-    link: '/parks/fantastic-park'
+    link: '/fantastic-park'
   },
 ]
 </script>

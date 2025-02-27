@@ -123,7 +123,7 @@ const Products4View = defineAsyncComponent(
   }
 
   h2 {
-    color: var(--bg-color);
+    color: #fff;
     transform: translateY(-50%);
   }
 }

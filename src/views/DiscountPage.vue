@@ -56,7 +56,7 @@ import telegram from '~/assets/icons/telegram.svg'
 <style lang="scss" scoped>
 .head {
 	background: var(--gradient-bg);
-	color: var(--bg-color);
+	color: #fff;
 }
 
 .main-info,

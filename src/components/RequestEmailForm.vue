@@ -170,12 +170,12 @@ const submitForm = async () => {
   width: 57rem;
   margin: 0 auto;
   background: var(--gradient-bg-13);
-  color: var(--bg-color);
+  color: var(--text-color);
 
   a,
   button,
   input {
-    color: var(--bg-color);
+    color: var(--text-color);
   }
 
   a:hover,
@@ -187,21 +187,21 @@ const submitForm = async () => {
   input:hover,
   input:focus,
   input:active {
-    color: var(--text-color);
-    border-color: transparent transparent var(--text-color) transparent;
-  }
-
-  .email-input {
+    color: var(--bg-color);
     border-color: transparent transparent var(--bg-color) transparent;
   }
 
+  .email-input {
+    border-color: transparent transparent var(--text-color) transparent;
+  }
+
   .email-send {
-    border: 1px solid var(--bg-color);
+    border: 1px solid var(--text-color);
 
     &:hover,
     &:focus,
     &:active {
-      border-color: var(--text-color);
+      border-color: var(--bg-color);
     }
   }
 }

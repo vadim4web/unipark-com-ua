@@ -64,8 +64,10 @@ const routes = [
 	},
 ]
 
+const BASE_URL = import.meta.env.VITE_BASE_URL ?? '/'
+
 const router = createRouter({
-	history: createWebHistory('/'),
+	history: createWebHistory(BASE_URL),
 	routes,
 })
 

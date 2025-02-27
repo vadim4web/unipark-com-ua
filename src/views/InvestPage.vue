@@ -223,7 +223,7 @@ const RequestEmailForm = defineAsyncComponent(() => import('~/components/Request
 <style lang="scss" scoped>
 .head {
 	background: var(--gradient-bg);
-	color: var(--bg-color);
+	color: #fff;
 }
 
 .top {
