@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
     gsap.fromTo(
         `.grid-item-CHIEF`,
-        { opacity: 0, yPercent: 100 },
+        { opacity: 0, yPercent: 50 },
         {
           opacity: 1,
           yPercent: 0,
@@ -19,7 +19,7 @@ onMounted(() => {
           scrollTrigger: {
             trigger: `.grid-item-TEAM`,
             start: 'top bottom',
-            end: 'center 80%',
+            end: 'top 80%',
             scrub: 1,
             toggleActions: "play none none reverse"
           }
@@ -28,7 +28,7 @@ onMounted(() => {
 
     gsap.fromTo(
       `.grid-item-1`, 
-      { opacity: 0, yPercent: 200 },
+      { opacity: 0, yPercent: 150 },
       {
         opacity: 1, 
         yPercent: 0, 
@@ -64,7 +64,7 @@ onMounted(() => {
       if (idx !== 0) {
         gsap.fromTo(
           person, 
-          { opacity: 0, yPercent: 100 },
+          { opacity: 0, yPercent: 66 },
           { 
             opacity: 1, 
             yPercent: -100, 
@@ -72,7 +72,7 @@ onMounted(() => {
             scrollTrigger: {
               trigger: A[idx - 1],
               start: 'top bottom',
-              end: 'center bottom', 
+              end: 'top 60%',
               scrub: 1,
               toggleActions: "play none none reverse"
             }

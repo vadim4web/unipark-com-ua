@@ -47,7 +47,7 @@ onMounted(() => {
         <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
         <div class="flex items-center justify-end button-wrapper">
           <button class="flex items-center justify-center">
-            <svg viewBox="0 0 25 25" stroke-width="3" stroke="var(--text-color-gray)">
+            <svg viewBox="0 0 25 25" stroke-width="5" stroke="var(--text-color-gray)">
               <line x1="0" y1="13" x2="25" y2="13"></line>
               <line x1="13" y1="0" x2="13" y2="25" class="vertical-line"></line>
             </svg>

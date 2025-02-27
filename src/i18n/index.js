@@ -52,6 +52,65 @@ const messages = {
     singing_press_3_: "Планами на сезон 2024 поділилися у дописі парку. Цього року заплановано 4 виставки, які вже стали улюбленими.",
     singing_press_3_src: "Bigkyiv",
 
+		magic_garden_press: "Преса про Магічний сад",
+    magic_garden_press_1: "Чим дивує цього року виставка тюльпанів на \"Співочому полі\" (фоторепортаж)",
+    magic_garden_press_1_: "На \"Співочому полі\" на території Печерського ландшафтного парку в Києві з 22 вересня 2023 року триває традиційна щорічна виставка хризантем.",
+    magic_garden_press_1_src: "UNIAN",
+
+    magic_garden_press_2: "У Києві стартує проєкт \"Магічний сад\"",
+    magic_garden_press_2_: "У Києві у п'ятницю, 22 вересня, в парку \"Співоче\" стартує проєкт \"Магічний сад\".",
+    magic_garden_press_2_src: "UKRINFORM",
+
+    magic_garden_press_3: "Фантастичні фігури серед хризантем: у Києві з'явився \"Магічний сад\"",
+    magic_garden_press_3_: "П’ятнадцять тисяч кущів хризантем і 35 істот, створених з моху та природних матеріалів, занурюють відвідувачів \"Магічного саду\" на Співочому у світ фантазій.",
+    magic_garden_press_3_src: "Вечірній Київ",
+
+    magic_garden_press_4: "Яскраві барви осені: у Києві тривають останні приготування до відкриття щорічної виставки хризантем",
+    magic_garden_press_4_: "22 вересня у Києві на Співочому полі на території Печерського ландшафтного парку відкриють виставку хризантем \"Магічний сад\".",
+    magic_garden_press_4_src: "Суспільне",
+
+
+		giants_world_press_1: "Світ Велетнів у центрі Чернівців: що відомо про новий тематичний парк розваг",
+    giants_world_press_1_: "Вже 19 липня в парку Шевченка у Чернівцях стартує унікальний проєкт Світ Велетнів. Проєкт вже з успіхом пройшов у Києві, Львові та Ужгороді, а ось у Чернівцях його покажуть вперше.",
+    giants_world_press_1_src: "C4",
+
+    giants_world_press_2: "Світ Велетнів у Голосіївському парку підкорює тисячі киян",
+    giants_world_press_2_: "У столиці проходить експозиція \"Світ велетнів\". За перший місяць роботи з гігантськими казковими персонажами вже встигли познайомитися понад 16 тисяч киян.",
+    giants_world_press_2_src: "Вечірній Київ",
+
+    giants_world_press_3: "«Світ Велетнів»: У Києві покажуть живі фігури, які заговорять голосами відомих українців",
+    giants_world_press_3_: "\"Світ Велетнів\", тематичний парк казкових персонажів, всі герої якого \"оживуть\" за допомогою аніматроніки, а також будуть розмовляти з гостями голосами відомих українців.",
+    giants_world_press_3_src: "Прямий",
+
+
+		troldomy_press_1: "Казковий світ Трольдомів",
+    troldomy_press_1_: "На території відпочинкового комплексу «Emily Resort», що у Винниках, запрацював тематичний парк «Казковий світ Трольдомів».",
+    troldomy_press_1_src: "Високий замок",
+    troldomy_press_2: "Казка у Львові",
+    troldomy_press_2_: "У Львові відкрили тематичний парк «Трольдоми», де кожен матиме можливість повзаємодіяти з казковими істотами.",
+    troldomy_press_2_src: "НТА",
+    troldomy_press_3: "Казка у Львові. Унікальне місце для дітей та дорослих: біля Львова “оселилися” трольдоми",
+    troldomy_press_3_: "Величезні пухнасті герої, які вміють не тільки рухатися, але й розмовляти: у Львові відкрили тематичний парк «Трольдоми». Унікальне місце для дітей та дорослих: біля Львова «оселилися» трольдоми.",
+    troldomy_press_3_src: "Вголос",
+
+
+    lights_and_dreams_press_1: "У Ужгороді відкриють парк світлових фігур «Lights & Dreams»",
+    lights_and_dreams_press_1_: "18 липня в Боздоському парку Ужгорода відбудеться довгоочікуване відкриття парку світлових фігур «Lights & Dreams», який вже з успіхом пройшов в Україні та за кордоном.",
+    lights_and_dreams_press_1_src: "Новини Закарпаття",
+
+    lights_and_dreams_press_2: "Парк світлових фігур Lights & Dreams в Ужгороді",
+    lights_and_dreams_press_2_: "На вас чекає незабутня подорож за межами уяви, яка включає в себе унікальні атракціони, інтерактивні розваги, зони дозвілля для дорослих та дітей, стилізовані фотозони, шоу аніматорів та гастро-заклади.",
+    lights_and_dreams_press_2_src: "Tourinform",
+
+    lights_and_dreams_press_3: "'Lights & Dreams': де казка стає реальністю",
+    lights_and_dreams_press_3_: "У Чернівцях відкрилася нова туристична атракція, яка стає справжнім місцем чудес та мрій – парк світлових фігур 'Lights & Dreams'.",
+    lights_and_dreams_press_3_src: "Go Chernivtsi",
+
+    lights_and_dreams_press_4: "В Ужгороді відкриють парк світлових фігур «Lights & Dreams»",
+    lights_and_dreams_press_4_: "Всі фігури проєкту «Lights & Dreams» виготовлені вручну з 50 000 ліхтариків, натурального шовку та спеціальних LED-ламп.",
+    lights_and_dreams_press_4_src: "Varosh",
+
+
 		magic_garden1: "Проєкт «Магічний сад» — це справжній тематичний парк із казковими героями, масштабними квітковими інсталяціями та яскравими фотозонами, де кожен відвідувач зможе відчути себе частиною історії.",
     magic_garden2: "Головні герої парку – добрі та злі персонажі легенд про міфічних створінь, що оберігають Землю. Загалом виставка передбачає близько 35 об'ємних 3D фігур, а також понад десятки тисяч квітів. Голосом проєкту став народний артист України, відомий актор театру та кіно Богдан Бенюк.",
     magic_garden3: "Кожен куточок парку сповнений чарів та фантазії, створюючи неповторну атмосферу, яка дарує незабутні емоції і дітям, і дорослим.",
@@ -201,7 +260,7 @@ const messages = {
 		ourParks: 'Our Parks',
 
 		SINGING: 'Spivoche',
-		MAGIC_GARDEN: 'Magic Garden',
+		MAGIC_GARDEN: 'Magical Garden',
 		GIANTS_WORLD: 'Giants’ World',
 		TROLDOMY: 'Troldomy',
 		LIGHT_AND_DREAMS: 'Light & Dreams',
@@ -247,7 +306,64 @@ const messages = {
     singing_press_3_: "The park shared its plans for the 2024 season. This year, four exhibitions are planned, which have already become favorites.",
     singing_press_3_src: "Bigkyiv",
 
-		magic_garden1: "The 'Magic Garden' project is a true theme park with fairy-tale characters, large floral installations, and vibrant photo zones, where every visitor can feel like part of the story.",
+
+		magic_garden_press: "Press about Magical Garden",
+    magic_garden_press_1: "What surprises the tulip exhibition at Spivoche Field offers this year (photo report)",
+    magic_garden_press_1_: "The annual chrysanthemum exhibition has been running at Spivoche Field in the Pechersk Landscape Park in Kyiv since September 22, 2023.",
+    magic_garden_press_1_src: "UNIAN",
+
+    magic_garden_press_2: "The Magical Garden project starts at Spivoche Park in Kyiv",
+    magic_garden_press_2_: "On Friday, September 22, the Magical Garden project starts at Spivoche Park in Kyiv.",
+    magic_garden_press_2_src: "UKRINFORM",
+
+    magic_garden_press_3: "Fantastic figures among chrysanthemums: the Magical Garden appeared in Kyiv",
+    magic_garden_press_3_: "Fifteen thousand chrysanthemum bushes and 35 creatures made of moss and natural materials immerse visitors of the Magical Garden at Spivoche into a world of fantasy.",
+    magic_garden_press_3_src: "Vechirniy Kyiv",
+
+    magic_garden_press_4: "Bright autumn colors: Kyiv is preparing for the opening of the annual chrysanthemum exhibition",
+    magic_garden_press_4_: "On September 22, the chrysanthemum exhibition Magical Garden will open at Spivoche Field in the Pechersk Landscape Park.",
+    magic_garden_press_4_src: "Suspilne",
+
+
+		giants_world_press_1: "Giants World in the center of Chernivtsi: what is known about the new themed amusement park",
+    giants_world_press_1_: "On July 19, a unique project Giants World will start in Shevchenko Park in Chernivtsi. The project has already successfully taken place in Kyiv, Lviv, and Uzhhorod, but will be shown in Chernivtsi for the first time.",
+    giants_world_press_1_src: "C4",
+
+    giants_world_press_2: "Giants World in Holosiivskyi Park conquers thousands of Kyivans",
+    giants_world_press_2_: "An exhibition Giants World is taking place in the capital. Over the first month of work, more than 16,000 Kyivans have already met the giant fairy-tale characters.",
+    giants_world_press_2_src: "Vechirniy Kyiv",
+
+    giants_world_press_3: "Giants World: Live figures will be shown in Kyiv, speaking in the voices of famous Ukrainians",
+    giants_world_press_3_: "Giants World, a themed park of fairy-tale characters, where all heroes will 'come to life' with the help of animatronics and will talk to guests with the voices of famous Ukrainians.",
+    giants_world_press_3_src: "Pryamyi",
+
+
+		troldomy_press_1: "The Fairytale World of Trolldoms",
+    troldomy_press_1_: "At the Emily Resort recreational complex in Vynnyky, the themed park 'Fairy World of Troldoms' has started its operation.",
+    troldomy_press_1_src: "Vysokyi Zamok",
+    troldomy_press_2: "A fairy tale in Lviv",
+    troldomy_press_2_: "In Lviv, the themed park 'Troldomy' has opened, offering visitors the opportunity to interact with mythical beings.",
+    troldomy_press_2_src: "NTA",
+    troldomy_press_3: "A fairy tale in Lviv. A unique place for children and adults: trolldoms have “settled” near Lviv",
+    troldomy_press_3_: "Giant fluffy heroes that can move and talk: Lviv has opened a themed park 'Troldomy'. A unique place for both children and adults, the Troldomy creatures have 'settled' near Lviv.",
+    troldomy_press_3_src: "Vholos",
+
+
+		lights_and_dreams_press_1: "The 'Lights & Dreams' light figure park opens in Uzhhorod",
+    lights_and_dreams_press_1_: "On July 18, the long-awaited opening of the 'Lights & Dreams' light figure park will take place at Bozdosky Park in Uzhhorod. This project has already been successful both in Ukraine and abroad.",
+    lights_and_dreams_press_1_src: "Novyny Zakarpattia",
+    lights_and_dreams_press_2: "'Lights & Dreams' light figure park in Uzhhorod",
+    lights_and_dreams_press_2_: "A unique adventure awaits you, featuring interactive attractions, leisure zones for adults and children, photo zones, animator shows, and food spots.",
+    lights_and_dreams_press_2_src: "Tourinform",
+    lights_and_dreams_press_3: "'Lights & Dreams': Where fairy tales come to life",
+    lights_and_dreams_press_3_: "A new tourist attraction has opened in Chernivtsi – the 'Lights & Dreams' light figure park, which is quickly becoming a place of wonder and dreams.",
+    lights_and_dreams_press_3_src: "Go Chernivtsi",
+    lights_and_dreams_press_4: "In Uzhhorod, the 'Lights & Dreams' light figure park opens",
+    lights_and_dreams_press_4_: "All figures in the 'Lights & Dreams' project are handmade with 50,000 light bulbs, natural silk, and special LED lamps.",
+    lights_and_dreams_press_4_src: "Varosh",
+
+
+		magic_garden1: "The 'Magical Garden' project is a true theme park with fairy-tale characters, large floral installations, and vibrant photo zones, where every visitor can feel like part of the story.",
     magic_garden2: "The main characters of the park are the good and evil characters from legends about mythical creatures that protect the Earth. The exhibition includes about 35 large 3D figures and over tens of thousands of flowers. The voice of the project was the People's Artist of Ukraine, famous theater and film actor Bohdan Benyuk.",
     magic_garden3: "Every corner of the park is filled with magic and fantasy, creating a unique atmosphere that gives unforgettable emotions to both children and adults.",
 
@@ -346,7 +462,7 @@ const messages = {
 		invest_stats_upto_: 'thousands',
 		invest_stats_upto__: 'of visitors',
 		invest_stats_peryear: 'per year',
-		invest_CTA: 'Have any suggestions? Contact us!',
+		invest_CTA: 'Have an offer? Contact us!',
 		invest_CTA_mail: 'Your email',
 		invest_CTA_send: 'SEND',
 

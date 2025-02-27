@@ -118,7 +118,7 @@ const Products4View = defineAsyncComponent(
     height: 100dvh;
     background: url('../assets/img/PRODUCTION.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 25% 75%;
     background-size: cover;
   }
 
@@ -139,7 +139,7 @@ const Products4View = defineAsyncComponent(
   .card {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
     padding: 2rem 4rem;
 
@@ -150,6 +150,7 @@ const Products4View = defineAsyncComponent(
     img {
       width: 30rem;
       aspect-ratio: 1;
+      border-radius: 1rem;
     }
 
     .text {

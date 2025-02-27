@@ -242,6 +242,8 @@ const Products4View = defineAsyncComponent(
     -o-transform: translateY(-75vh);
     opacity: 0;
   }
+
+  a:not(:hover) { color: #000; }
 }
 
 .top {
@@ -306,7 +308,7 @@ const Products4View = defineAsyncComponent(
   padding-top: 3rem;
 
   h3 {
-    text-indent: 15vw;
+    text-align: center;
   }
 
   a {
@@ -316,6 +318,10 @@ const Products4View = defineAsyncComponent(
     &:not(:last-of-type) {
       border-bottom: 1px solid var(--text-color-gray-25);
     }
+  }
+
+  .source {
+    padding-right: 1rem;
   }
 
   .description {

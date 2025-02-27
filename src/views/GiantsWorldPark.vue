@@ -1,6 +1,9 @@
 <script setup>
 import { defineAsyncComponent } from 'vue'
 
+const RequestEmailForm = defineAsyncComponent(
+  () => import('~/components/RequestEmailForm.vue')
+)
 const Products4View = defineAsyncComponent(
   () => import('~/components/Products4View.vue')
 )
@@ -119,6 +122,93 @@ const Products4View = defineAsyncComponent(
     </div>
   </section>
 
+  <section class="gallery">
+    <h3 class="text-pro-bold text-[3rem]">
+      {{ $t('photo_gallery') }}
+    </h3>
+
+    <div class="photos grid grid-cols-3 gap-[1.25rem]">
+      <div class="photo photo1"></div>
+      <div class="photo photo2"></div>
+      <div class="photo photo3"></div>
+    </div>
+  </section>
+
+  <section class="video-gallery">
+    <h3 class="text-pro-bold text-[5rem]">
+      {{ $t('video_about') }} {{ $t('GIANTS_WORLD') }}
+    </h3>
+
+    <div class="videos grid grid-cols-2 gap-[1.25rem]">
+      <div class="video video1">
+        <iframe src="https://www.youtube.com/embed/vbmq5HyVsg4?si=OwswSOYdt1i6rGyx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video video2">
+        <iframe src="https://www.youtube.com/embed/vbmq5HyVsg4?si=OwswSOYdt1i6rGyx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="press">
+    <h3 class="text-pro-bold text-[8.5rem]">
+      {{ $t('press_about') }}  {{ $t('GIANTS_WORLD') }}
+    </h3>
+    <a
+      href="https://c4.com.ua/novyny/svit-veletniv-u-centri-chernivciv-shho-vidomo-pro-novij-tematichnij-park-rozvag/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="grid grid-cols-[3fr_8fr]"
+    >
+      <div class="source">
+        <h4 class="src text-pro-bold text-[3.5rem]">{{ $t('giants_world_press_1_src') }}</h4>
+        <p class="date text-pro-bold text-[2rem]">08.07.24</p>
+      </div>
+      <div class="description flex flex-col gap-[0.75rem]">
+        <h4 class="title text-bold text-[1.25rem] leading-[133%] uppercase">{{ $t('giants_world_press_1') }}</h4>
+        <p class="preview text-[1.1rem]">{{ $t('giants_world_press_1_') }}</p>
+        <a>{{ $t('more_details') }}</a>
+      </div>
+    </a>
+
+    <a
+      href="https://vechirniy.kyiv.ua/news/57222/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="grid grid-cols-[3fr_8fr]"
+    >
+      <div class="source">
+        <h4 class="src text-pro-bold text-[3.5rem]">{{ $t('giants_world_press_2_src') }}</h4>
+        <p class="date text-pro-bold text-[2rem]">09.10.21</p>
+      </div>
+      <div class="description flex flex-col gap-[0.75rem]">
+        <h4 class="title text-bold text-[1.25rem] leading-[133%] uppercase">{{ $t('giants_world_press_2') }}</h4>
+        <p class="preview text-[1.1rem]">{{ $t('giants_world_press_2_') }}</p>
+        <a>{{ $t('more_details') }}</a>
+      </div>
+    </a>
+
+    <a
+      href="https://prm.ua/svit-veletniv-u-kyievi-pokazhut-zhyvi-fihury-iaki-zahovoriat-holosamy-vidomykh-ukraintsiv/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="grid grid-cols-[3fr_8fr]"
+    >
+      <div class="source">
+        <h4 class="src text-pro-bold text-[3.5rem]">{{ $t('giants_world_press_3_src') }}</h4>
+        <p class="date text-pro-bold text-[2rem]">26.08.21</p>
+      </div>
+      <div class="description flex flex-col gap-[0.75rem]">
+        <h4 class="title text-bold text-[1.25rem] leading-[133%] uppercase">{{ $t('giants_world_press_3') }}</h4>
+        <p class="preview text-[1.1rem]">{{ $t('giants_world_press_3_') }}</p>
+        <a>{{ $t('more_details') }}</a>
+      </div>
+    </a>
+  </section>
+
+  <section class="info-form">
+    <request-email-form mode="info" />
+  </section>
+
   <products-4-view hidden-item="giants-world" />
 </main>
 </template>
@@ -150,12 +240,13 @@ const Products4View = defineAsyncComponent(
     -o-transform: translateY(-75vh);
     opacity: 0;
   }
+
+  a:not(:hover) { color: #000; }
 }
 
 .top {
 	padding-inline: clamp(10vmin, 6rem, 6vmax);
 	padding-top: 4.5rem;
-	min-height: 50vh;
 
 	.social-media svg {
     fill: currentColor;
@@ -163,5 +254,97 @@ const Products4View = defineAsyncComponent(
     height: 2.5rem;
     margin: -10%;
   }
+}
+
+.gallery {
+  padding-top: 12.25rem;
+  padding-inline: 4rem;
+
+  h3 {
+    text-indent: 14.5vw;
+  }
+
+  .photos {
+    margin-top: 18.5rem;
+  }
+
+  .photo {
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .photo1 { background-image: url('../assets/img/G_W_1.jpg') }
+  .photo2 { background-image: url('../assets/img/G_W_2.jpg') }
+  .photo3 { background-image: url('../assets/img/G_W_3.jpg') }
+}
+
+.video-gallery {
+  padding-top: 26rem;
+  padding-inline: 4rem;
+
+  h3 {
+    text-indent: 7.5vw;
+  }
+
+  .videos {
+    padding-top: 27rem;
+  }
+
+  .video3,
+  .video4 {
+    margin-top: 0.66rem;
+  }
+
+  .video iframe {
+    width: 100%;
+    aspect-ratio: 560 / 315;
+  }
+}
+
+.press {
+  padding-top: 3rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  a {
+    padding-inline: 5rem;
+    padding-top: 2.75rem;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid var(--text-color-gray-25);
+    }
+  }
+
+  .source {
+    padding-right: 1rem;
+  }
+
+  .description {
+    padding-top: 1.25rem;
+    
+    p {
+      margin-bottom: -0.25rem;
+    }
+
+    a {
+      align-self: end;
+      position: relative;
+      top: -1.75rem;
+      left: 3.5rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-family: Arial;
+      font-weight: bold;
+    }
+  }
+}
+
+.info-form {
+  padding-top: 1rem;
+  padding-bottom: 12.5rem;
 }
 </style>
