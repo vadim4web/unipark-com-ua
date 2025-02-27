@@ -100,7 +100,7 @@ const Products4View = defineAsyncComponent(
       {{ $t('production_AZ') }}
     </h2>
 
-    <products-4-view hiddenItem="singing" />
+    <products-4-view hidden-item="singing" />
   </main>
 </template>
 

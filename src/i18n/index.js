@@ -26,6 +26,12 @@ const messages = {
 		back: 'Повернутися',
 		buy: 'Купити квитки',
 		details: 'детально',
+
+		photo_gallery: "ФОТОгалерея",
+    video_about: "ВІДЕО про ",
+    press_about: "Преса про ",
+    more_details: "детальніше ↗",
+
 		contacts: 'КОНТАКТИ',
 		parks: 'НАШІ ПАРКИ',
 		address: 'Київ, вул. Лаврська 31',
@@ -33,6 +39,18 @@ const messages = {
 		singing1: "Співоче є одним із наймальовничіших куточків столиці, адже розмістилося воно на Печерських пагорбах, в самому серці зеленого Києва.",
 		singing2: "Це місце стало справжнім туристичним якорем та улюбленою локацією сімейного дозвілля, відомою унікальними івентами та культурними подіями.",
 		singing3: "'СПІВОЧЕ' це сімейний парк відпочинку, де кожен може знайти собі заняття. На території організовані зони дозвілля та відпочинку сімейного типу, різноманітні квіткові інсталяції та фотозони. Панорамні схили парку оповиті справжньою зеленою ковдрою із сотень видів дерев, кущів, квітів та інших рослин. З оглядових майданчиків відкривається фантастичний краєвид на Дніпро та лівий берег Києва.",
+		
+    singing_press_1: "Оновлення та вдосконалення: які заходи пропонують відвідувачам \"Співочого поля\" у Києві",
+    singing_press_1_: "У Київському міському центрі народної творчості та культурологічних досліджень \"Співоче поле\" анонсували програму на цей рік.",
+    singing_press_1_src: "Суспільне",
+
+    singing_press_2: "Чим дивує цього року виставка тюльпанів на \"Співочому полі\" (фоторепортаж)",
+    singing_press_2_: "25 квітня 2024 року на \"Співочому полі\" у Печерському ландшафтному парку стартувала традиційна виставка тюльпанів.",
+    singing_press_2_src: "UNIAN",
+
+    singing_press_3: "Тюльпани, однорічники, хризантеми, ілюмінації: Співоче поле анонсує програму на 2024 рік",
+    singing_press_3_: "Планами на сезон 2024 поділилися у дописі парку. Цього року заплановано 4 виставки, які вже стали улюбленими.",
+    singing_press_3_src: "Bigkyiv",
 
 		magic_garden1: "Проєкт «Магічний сад» — це справжній тематичний парк із казковими героями, масштабними квітковими інсталяціями та яскравими фотозонами, де кожен відвідувач зможе відчути себе частиною історії.",
     magic_garden2: "Головні герої парку – добрі та злі персонажі легенд про міфічних створінь, що оберігають Землю. Загалом виставка передбачає близько 35 об'ємних 3D фігур, а також понад десятки тисяч квітів. Голосом проєкту став народний артист України, відомий актор театру та кіно Богдан Бенюк.",
@@ -202,6 +220,12 @@ const messages = {
 		loading: 'Loading...',
 		back: 'Go back',
 		details: 'details',
+
+		photo_gallery: "PHOTO gallery",
+    video_about: "VIDEO about ",
+    press_about: "Press about ",
+    more_details: "more details ↗",
+
 		buy: 'Buy tickets',
 		contacts: 'CONTACTS',
 		parks: 'OUR PARKS',
@@ -210,6 +234,18 @@ const messages = {
 		singing1: "Spivoche is one of the most picturesque corners of the capital, located on the Pechersk hills, in the heart of green Kyiv.",
 		singing2: "This place has become a true tourist anchor and a favorite family leisure spot, known for its unique events and cultural activities.",
 		singing3: "'SPIVOCHE' is a family recreation park where everyone can find an activity. The area is organized into family-friendly leisure zones, various flower installations, and photo zones. The panoramic slopes of the park are covered with a true green blanket of hundreds of tree, bush, flower, and other plant species. From the viewing platforms, there is a fantastic view of the Dnieper and the left bank of Kyiv.",
+
+    singing_press_1: "Updates and improvements: what events does Spivoche Field in Kyiv offer to visitors",
+    singing_press_1_: "Kyiv City Center for Folk Art and Cultural Research Spivoche Field announced the program for this year.",
+    singing_press_1_src: "Suspilne",
+
+    singing_press_2: "What surprises the tulip exhibition at Spivoche Field offers this year (photo report)",
+    singing_press_2_: "On April 25, 2024, the traditional tulip exhibition started in the Pechersk Landscape Park in Kyiv.",
+    singing_press_2_src: "UNIAN",
+
+    singing_press_3: "Tulips, annuals, chrysanthemums, illuminations: Spivoche Field announces the program for 2024",
+    singing_press_3_: "The park shared its plans for the 2024 season. This year, four exhibitions are planned, which have already become favorites.",
+    singing_press_3_src: "Bigkyiv",
 
 		magic_garden1: "The 'Magic Garden' project is a true theme park with fairy-tale characters, large floral installations, and vibrant photo zones, where every visitor can feel like part of the story.",
     magic_garden2: "The main characters of the park are the good and evil characters from legends about mythical creatures that protect the Earth. The exhibition includes about 35 large 3D figures and over tens of thousands of flowers. The voice of the project was the People's Artist of Ukraine, famous theater and film actor Bohdan Benyuk.",
