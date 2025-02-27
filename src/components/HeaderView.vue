@@ -43,36 +43,36 @@ const parksMenuToggle = () => {
             <li>
               <ul ref="parksList" class="parks-list">
                 <li>
-                  <router-link to="/parks/singing" @click="parksMenuClose">{{
+                  <router-link to="/singing" @click="parksMenuClose">{{
                     $t('SINGING')
                   }}</router-link>
                 </li>
                 <li>
                   <router-link
-                    to="/parks/magic-garden"
+                    to="/magic-garden"
                     @click="parksMenuClose"
                     >{{ $t('MAGIC_GARDEN') }}</router-link>
                 </li>
                 <li>
                   <router-link
-                    to="/parks/giants-world"
+                    to="/giants-world"
                     @click="parksMenuClose"
                     >{{ $t('GIANTS_WORLD') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/parks/troldomy" @click="parksMenuClose">{{
+                  <router-link to="/troldomy" @click="parksMenuClose">{{
                     $t('TROLDOMY')
                   }}</router-link>
                 </li>
                 <li>
                   <router-link
-                    to="/parks/light-and-dreams"
+                    to="/light-and-dreams"
                     @click="parksMenuClose"
                     >{{ $t('LIGHT_AND_DREAMS') }}</router-link>
                 </li>
                 <li>
                   <router-link
-                    to="/parks/fantastic-park"
+                    to="/fantastic-park"
                     @click="parksMenuClose"
                     >{{ $t('FANTASTIC_PARK') }}</router-link>
                 </li>

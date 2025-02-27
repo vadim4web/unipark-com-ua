@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
-const slides = ref([
+const slides = [
   {
     image: '/img/Slide_1.jpg',
     link: '/parks/light-and-dreams'
@@ -20,7 +20,7 @@ const slides = ref([
     image: '/img/Slide_4.jpg',
     link: '/parks/fantastic-park'
   },
-])
+]
 </script>
 
 <template>

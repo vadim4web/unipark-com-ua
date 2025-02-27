@@ -35,7 +35,7 @@
     right: 0;
     z-index: -1;
     height: calc(42.5rem + var(--header-height));
-    background: url('../../assets/img/FАNTASTIC_PARK.png');
+    background: url('../assets/img/FАNTASTIC_PARK.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

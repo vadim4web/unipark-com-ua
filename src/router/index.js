@@ -7,40 +7,34 @@ const routes = [
 		meta: { title: 'main' }
 	},
 	{
-		path: '/parks',
-		meta: { title: 'ourParks' },
-		children: [
-			{
-				path: 'singing',
-				component: () => import('~/views/parks/SingingPark.vue'),
-				meta: { title: 'SINGING' }
-			},
-			{
-				path: 'troldomy',
-				component: () => import('~/views/parks/TroldomyPark.vue'),
-				meta: { title: 'TROLDOMY' }
-			},
-			{
-				path: 'giants-world',
-				component: () => import('~/views/parks/GiantsWorldPark.vue'),
-				meta: { title: 'GIANTS_WORLD' }
-			},
-			{
-				path: 'light-and-dreams',
-				component: () => import('~/views/parks/LightAndDreamsPark.vue'),
-				meta: { title: 'LIGHT_AND_DREAMS' }
-			},
-			{
-				path: 'magic-garden',
-				component: () => import('~/views/parks/MagicGardenPark.vue'),
-				meta: { title: 'MAGIC_GARDEN' }
-			},
-			{
-				path: 'fantastic-park',
-				component: () => import('~/views/parks/FantasticPark.vue'),
-				meta: { title: 'FANTASTIC_PARK' }
-			},
-		],
+		path: '/singing',
+		component: () => import('~/views/SingingPark.vue'),
+		meta: { title: 'SINGING' }
+	},
+	{
+		path: '/troldomy',
+		component: () => import('~/views/TroldomyPark.vue'),
+		meta: { title: 'TROLDOMY' }
+	},
+	{
+		path: '/giants-world',
+		component: () => import('~/views/GiantsWorldPark.vue'),
+		meta: { title: 'GIANTS_WORLD' }
+	},
+	{
+		path: '/light-and-dreams',
+		component: () => import('~/views/LightAndDreamsPark.vue'),
+		meta: { title: 'LIGHT_AND_DREAMS' }
+	},
+	{
+		path: '/magic-garden',
+		component: () => import('~/views/MagicGardenPark.vue'),
+		meta: { title: 'MAGIC_GARDEN' }
+	},
+	{
+		path: '/fantastic-park',
+		component: () => import('~/views/FantasticPark.vue'),
+		meta: { title: 'FANTASTIC_PARK' }
 	},
 	{
 		path: '/company',

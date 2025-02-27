@@ -110,23 +110,23 @@
 					</span>
 					<ul class="flex flex-col justify-center gap-[1rem]">
 						<li>
-							<router-link to="/parks/singing">{{ $t('SINGING') }}</router-link>
+							<router-link to="/singing">{{ $t('SINGING') }}</router-link>
 						</li>
 						<li>
-							<router-link to="/parks/troldomy">{{ $t('TROLDOMY') }}</router-link>
+							<router-link to="/troldomy">{{ $t('TROLDOMY') }}</router-link>
 						</li>
 						<li>
-							<router-link to="/parks/giants-world">{{
+							<router-link to="/giants-world">{{
 								$t('GIANTS_WORLD')
 							}}</router-link>
 						</li>
 						<li>
-							<router-link to="/parks/light-and-dreams">{{
+							<router-link to="/light-and-dreams">{{
 								$t('LIGHT_AND_DREAMS')
 							}}</router-link>
 						</li>
 						<li>
-							<router-link to="/parks/magic-garden">{{
+							<router-link to="/magic-garden">{{
 								$t('MAGIC_GARDEN')
 							}}</router-link>
 						</li>

@@ -12,11 +12,10 @@ const Products4View = defineAsyncComponent(
     <h2
       class="text-pro-bold text-[12.5rem] text-center relative leading-[137.5%]"
     >
-      {{ $t('SINGING') }}
+      {{ $t('MAGIC_GARDEN') }}
     </h2>
   </section>
-
-  <products-4-view hiddenItem="singing" />
+  <products-4-view hiddenItem="magic-garden" />
 </main>
 </template>
 
@@ -32,7 +31,7 @@ const Products4View = defineAsyncComponent(
     right: 0;
     z-index: -1;
     height: 100dvh;
-    background: url('../../assets/img/SINGING.jpg');
+    background: url('../assets/img/MAGIC_GARDEN.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

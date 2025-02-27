@@ -1,11 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { parksData } from '../assets/data' // Імпортуємо дані з index.js
+import { parksData } from '../assets/data'
 
-// Тепер parksData буде містити всі парки з їхніми зображеннями
 const parks = ref(parksData)
 
-// Функція для зміни стану акордеону
 const toggleMenu = (index) => {
   parks.value.forEach((park, i) => {
     if (i !== index) {
@@ -15,28 +13,25 @@ const toggleMenu = (index) => {
   parks.value[index].isOpen = !parks.value[index].isOpen
 }
 
-// Логіка для передзавантаження зображень при досягненні видимості
 const preloadImages = (parkIndex) => {
   const images = parks.value[parkIndex].images
   images.forEach((image) => {
     const img = new Image()
-    img.src = image // Завантажуємо в бекграунд
+    img.src = image
   })
 }
 
 onMounted(() => {
-  // Спостерігач за видимістю кожного парку на екрані
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const index = entry.target.dataset.index
-        preloadImages(index)  // Запускаємо передзавантаження для парку
-        observer.unobserve(entry.target) // Спиняємо спостереження після того, як зображення передзавантажено
+        preloadImages(index)
+        observer.unobserve(entry.target)
       }
     })
-  }, { threshold: 0.5 })  // 50% елемента мають бути видимі
+  }, { threshold: 0.5 })
 
-  // Налаштовуємо спостереження на кожен елемент меню
   const parkItems = document.querySelectorAll('.park-item')
   parkItems.forEach((item) => {
     observer.observe(item)
@@ -60,7 +55,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <a v-else :href="`/parks/${park.slug}`" role="button" class="grid grid-cols-3">
+      <a v-else :href="`/${park.slug}`" role="button" class="grid grid-cols-3">
         <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">{{ $t(park.name) }}</h3>
         <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
       </a>
@@ -157,18 +152,15 @@ button svg line {
   transform-box: fill-box;
 }
 
-/* Горизонтальна лінія залишається незмінною */
 button svg line:first-child {
   transform: none;
 }
 
-/* Вертикальна лінія */
 .vertical-line {
   transform: rotate(0deg);
   transition: transform 0.5s ease;
 }
 
-/* При відкритті меню */
 .open .vertical-line {
   transform: rotate(-90deg);
 }

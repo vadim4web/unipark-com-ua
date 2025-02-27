@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const images = ref([
+const images = [
   "/img/PRODUCTION_1.jpg",
   "/img/PRODUCTION_2.jpg",
   "/img/PRODUCTION_3.jpg",
@@ -15,7 +15,7 @@ const images = ref([
   "/img/PRODUCTION_7.jpg",
   "/img/PRODUCTION_8.jpg",
   "/img/PRODUCTION_9.jpg",
-]);
+]
 
 const imageRefs = ref([]);
 const collageRef = ref(null);

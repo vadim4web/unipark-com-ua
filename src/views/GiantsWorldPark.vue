@@ -31,7 +31,7 @@ const Products4View = defineAsyncComponent(
     right: 0;
     z-index: -1;
     height: 100dvh;
-    background: url('../../assets/img/GIANTS_WORLD.jpg');
+    background: url('../assets/img/GIANTS_WORLD.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
