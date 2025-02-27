@@ -8,10 +8,39 @@ const Products4View = defineAsyncComponent(
 
 <template>
 <main>
-  SINGING PARK
+  <section class="head flex justify-center items-center">
+    <h2
+      class="text-pro-bold text-[12.5rem] text-center relative leading-[137.5%]"
+    >
+      {{ $t('SINGING') }}
+    </h2>
+  </section>
 
   <products-4-view hiddenItem="singing" />
 </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.head {
+  height: calc(100dvh - var(--header-height));
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100dvh;
+    background: url('../../assets/img/SINGING.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    color: var(--bg-color);
+    transform: translateY(-50%);
+  }
+}
+</style>
