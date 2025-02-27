@@ -4,45 +4,45 @@
 
 @font-face {
   font-family: "IntelClearBold";
-  src: url("/font/intel-clear/IntelClear_Bd.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClear_Bd.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "IntelClearItalic";
-  src: url("/font/intel-clear/IntelClear_It.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClear_It.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "IntelClearLightItalic";
-  src: url("/font/intel-clear/IntelClear_LtIt.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClear_LtIt.ttf") format("truetype");
   font-style: italic;
   font-weight: lighter;
 }
 
 @font-face {
   font-family: "IntelClearProBold";
-  src: url("/font/intel-clear/IntelClearPro_Bd.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClearPro_Bd.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "IntelClearBoldItalic";
-  src: url("/font/intel-clear/IntelClear_BdIt.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClear_BdIt.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "IntelClearLight";
-  src: url("/font/intel-clear/IntelClear_Lt.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClear_Lt.ttf") format("truetype");
   font-weight: lighter;
 }
 
 @font-face {
   font-family: "IntelClearRegular";
-  src: url("/font/intel-clear/IntelClear_Rg.ttf") format("truetype");
+  src: url("./assets/font/intel-clear/IntelClear_Rg.ttf") format("truetype");
   font-weight: normal;
 }
 
@@ -78,6 +78,7 @@
   --gradient-bg-225: linear-gradient(225deg, #cfd71d, #0bb2ac);
   --header-height: max(80px);
   --footer-height: max(400px);
+  font-family: "IntelClearRegular";
   color: var(--text-color);
 }
 

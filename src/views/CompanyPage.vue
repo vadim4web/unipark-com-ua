@@ -178,7 +178,7 @@ const RequestEmailForm = defineAsyncComponent(
 
 .founder {
 	.left {
-		background: url('/photo/COMPANY_CHIEF.jpeg');
+		background: url('../assets/team/COMPANY_CHIEF.jpeg');
 		background-size: cover;
 		aspect-ratio: 0.666;
 		background-position: center;

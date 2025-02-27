@@ -2,20 +2,9 @@
 import { ref, onMounted, onUnmounted, nextTick } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { imgData as images } from '~/assets/data'
 
 gsap.registerPlugin(ScrollTrigger);
-
-const images = [
-  "/img/PRODUCTION_1.jpg",
-  "/img/PRODUCTION_2.jpg",
-  "/img/PRODUCTION_3.jpg",
-  "/img/PRODUCTION_4.jpg",
-  "/img/PRODUCTION_5.jpg",
-  "/img/PRODUCTION_6.jpg",
-  "/img/PRODUCTION_7.jpg",
-  "/img/PRODUCTION_8.jpg",
-  "/img/PRODUCTION_9.jpg",
-]
 
 const imageRefs = ref([]);
 const collageRef = ref(null);

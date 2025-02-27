@@ -64,11 +64,12 @@ const routes = [
 	},
 ]
 
-const BASE_URL = import.meta.env.VITE_BASE_URL ?? '/'
+const BASE_URL = (import.meta.env.VITE_BASE_URL ?? '/').replace(/\/$/, '')
 
 const router = createRouter({
 	history: createWebHistory(BASE_URL),
 	routes,
+	strict: true,
 })
 
 router.afterEach(() => {

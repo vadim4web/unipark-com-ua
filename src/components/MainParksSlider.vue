@@ -2,25 +2,7 @@
 import { ref } from 'vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
-
-const slides = [
-  {
-    image: '/img/Slide_1.jpg',
-    link: '/light-and-dreams'
-  },
-  {
-    image: '/img/Slide_2.jpg',
-    link: '/magic-garden'
-  },
-  {
-    image: '/img/Slide_3.jpg',
-    link: '/giants-world'
-  },
-  {
-    image: '/img/Slide_4.jpg',
-    link: '/fantastic-park'
-  },
-]
+import { sliderData as slides } from '~/assets/data'
 </script>
 
 <template>
