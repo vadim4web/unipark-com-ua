@@ -16,6 +16,9 @@ const messages = {
 		invest: 'Інвестиційна програма',
 		discount: 'Система лояльності',
 		about: 'Про нас',
+
+		pageNotFound: 'Сторінку не знайдено',
+
 		toggleTheme_dark: 'До світлої теми',
 		toggleTheme_light: 'До темної теми',
 		toggleLangTip: 'Мова',
@@ -63,6 +66,21 @@ const messages = {
 		Team11_: 'відеограф',
 		Team12: 'Вадім Червоняк',
 		Team12_: 'веб-розробник',
+
+		welcome: 'Ласкаво запрошуємо в світ UniPark – компанії, що втілює мрії у реальність, створюючи неповторні тематичні парки як в Україні, так і за кордоном.',
+		our_ideology: 'Наша ідеологія',
+
+		our_mission: 'Наша місія полягає в тому, щоб подарувати кожному гостю незабутні позитивні враження, які живуть у пам\'яті протягом усього життя. Ми віримо, що кожна прогулянка нашими парками – це унікальний шлях до щастя і радості, де кожен крок наповнений чарами, магією та незабутніми емоціями. Об\'єднані бажанням дарувати людям магію і веселощі, ми неустанно працюємо, щоб кожен момент у UniPark став частиною найяскравіших спогадів вашого життя.',
+
+		our_direction: 'Основний напрямок нашої компанії',
+		our_direction_: 'Створення від ідеї до реалізації унікальних тематичних парків, які мають власну історію, унікальних персонажів та захоплюючі інсталяції, які ми виготовляємо на власному виробництві.',
+		
+		achievement: 'Ми реалізували безліч проєктів у різних країнах світу',
+		achievement_: 'Наша компанія створює та відкриває проєкти не тільки в Україні, а й за кордоном. Парки від UniPark були в Туреччині та країнах Балтії. Мешканці кожної відвіданої нами країни залишалися в захваті від побаченого.',
+
+		quote: 'Ми реалізували безліч унікальних проєктів в Україні та інших країнах світу. Наша команда створює від ідеї до втілення тематичні парки різної складності. Всі проєкти мають смислове навантаження та власну індивідуальну історію.',
+
+		founder: 'Засновник компанії',
 
 		invest_h3: 'Інвестиції в Юніверсал парк ЮА',
 		invest_top_left: 'про UNIVERSAL PARK',
@@ -148,6 +166,9 @@ const messages = {
 		invest: 'Investment Program',
 		discount: 'Loyalty System',
 		about: 'About Us',
+
+		pageNotFound: 'Page Not Found',
+
 		toggleTheme_dark: 'To light theme',
 		toggleTheme_light: 'To dark theme',
 		toggleLangTip: 'Language',
@@ -168,7 +189,6 @@ const messages = {
 
 		our_team: 'Our Team',
 		our_team_: 'Our projects are created by a team of true specialists who are dedicated to their work.',
-
 
 		Team0: 'Denys Pohorelko',
 		Team0_: 'Founder',
@@ -197,6 +217,21 @@ const messages = {
 		Team12: 'Vadym Chervoniak',
 		Team12_: 'Web Developer',
 
+		welcome: 'We cordially invite you to the world of UniPark – a company that turns dreams into reality, creating unique theme parks both in Ukraine and abroad.',
+
+		our_ideology: 'Our ideology',
+
+		our_mission: 'Our mission is to give each guest unforgettable positive experiences that will live in their memory for a lifetime. We believe that every walk through our parks is a unique path to happiness and joy, where every step is filled with charm, magic and unforgettable emotions. United by the desire to give people magic and fun, we work tirelessly to make every moment at UniPark become part of the most vivid memories of your life.',
+
+		our_direction: 'The main direction of our company',
+		our_direction_: 'Creating, from idea to implementation, unique theme parks that have their own history, unique characters, and exciting installations that we produce in our own production facility.',
+
+		achievement: 'We have implemented many projects in different countries of the world',
+		achievement_: 'Our company creates and opens projects not only in Ukraine, but also abroad. UniPark parks were in Turkey and the Baltic countries. Residents of each country we visited were delighted with what they saw.',
+
+		quote: 'We have implemented many unique projects in Ukraine and other countries of the world. Our team creates theme parks of varying complexity from idea to implementation. All projects have a semantic load and their own individual history.',
+
+		founder: 'Founder of the company',
 
 		invest_h3: 'Investments in Universal Park UA',
 		invest_top_left: 'about UNIVERSAL PARK',

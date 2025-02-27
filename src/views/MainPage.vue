@@ -4,7 +4,7 @@ import MainParksSlider from '~/components/MainParksSlider.vue'
 import BouncingText from '~/components/BouncingText.vue'
 import MainParksAccordion from '~/components/MainParksAccordion.vue'
 import ProductionAnimation from '~/components/ProductionAnimation.vue'
-import TeamCollage from '~/components/TeamCollage.vue'
+import OurTeamCollage from '~/components/OurTeamCollage.vue'
 
 import { useWindowScroll } from '@vueuse/core'
 
@@ -67,7 +67,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 			</h3>
 
 
-			<team-collage />
+			<our-team-collage />
 		</section>
 	</main>
 </template>
