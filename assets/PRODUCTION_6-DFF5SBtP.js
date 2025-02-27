@@ -1,0 +1,1 @@
+const s="/unipark-com-ua/assets/PRODUCTION_1-VDTetsDO.jpg",a="/unipark-com-ua/assets/PRODUCTION_2-CPMOw4Ha.jpg",O="/unipark-com-ua/assets/PRODUCTION_3-bsBK7GPi.jpg",P="/unipark-com-ua/assets/PRODUCTION_4-BHSp9wUK.jpg",o="/unipark-com-ua/assets/PRODUCTION_5-Bx_PHoi5.jpg",p="/unipark-com-ua/assets/PRODUCTION_6-HUZGjXfT.jpg";export{s as P,a,O as b,P as c,o as d,p as e};
