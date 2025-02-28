@@ -198,6 +198,10 @@ header {
 
       .parks-list {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: 1rem;
         z-index: 1;
       }
 
@@ -208,7 +212,7 @@ header {
       & .open.parks-list {
         opacity: 1;
         background: var(--bg-color);
-        padding-bottom: 0.5rem;
+  
       }
     }
   }
