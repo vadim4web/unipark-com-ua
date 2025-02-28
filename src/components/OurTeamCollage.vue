@@ -207,8 +207,8 @@ onMounted(() => {
 }
 
 .grid-item {
-  width: 20rem;
-  height: 30rem;
+  width: min(20rem, 100%);
+  height: min(30rem, 150%);
   background-position: center;
   background-size: cover;
   position: relative;

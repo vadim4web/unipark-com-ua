@@ -76,8 +76,8 @@
   --gradient-bg-13: linear-gradient(13deg, #cfd71d, #0bb2ac);
   --gradient-bg-45: linear-gradient(45deg, #cfd71d, #0bb2ac);
   --gradient-bg-225: linear-gradient(225deg, #cfd71d, #0bb2ac);
-  --header-height: max(80px);
-  --footer-height: max(400px);
+  --header-height: max(80px, 5rem);
+  --footer-height: max(400px, 25rem);
   font-family: "IntelClearRegular";
   color: var(--text-color);
 }
