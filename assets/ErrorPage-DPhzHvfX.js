@@ -1,0 +1,1 @@
+import{c as s,k as r,b as c,t as e,u as n,M as u,N as l,o as i}from"./index-BmLeipdY.js";const _={class:"flex flex-col justify-center items-center text-[2rem]"},k={__name:"ErrorPage",setup(m){const t=l(),a=()=>t.back();return(o,p)=>(i(),s("main",_,[r(" 404 ⛔ "+e(n(u)().path)+" ",1),c("a",{role:"button",onClick:a},e(o.$t("back")),1)]))}};export{k as default};
