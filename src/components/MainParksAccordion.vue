@@ -55,10 +55,10 @@ onMounted(() => {
         </div>
       </div>
 
-      <a v-else :href="`/${park.slug}`" role="button" class="grid grid-cols-3">
+      <router-link v-else :to="`/${park.slug}`" role="button" class="grid grid-cols-3">
         <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">{{ $t(park.name) }}</h3>
         <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
-      </a>
+      </router-link>
 
       <div v-if="park.images.length" class="image-grid-wrapper grid grid-cols-3 gap-[1.75rem]">
         <img v-for="(image, i) in park.images" :key="i" class="image-item relative" :class="'image' + i" :style="[{ zIndex: i}]" :src="image" alt="Park Image" />

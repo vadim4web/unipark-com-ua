@@ -157,13 +157,13 @@ const RequestEmailForm = defineAsyncComponent(() => import('~/components/Request
 			</div>
 		</section>
 
-		<section class="stats w-full h-[34.5rem] flex flex-col items-center gap-[1.25rem]">
+		<section class="stats w-full flex flex-col items-center gap-[1.25rem]">
 			<h2 class="text-[4.5rem] text-pro-bold">
 				{{ $t('invest_stats') }}
 			</h2>
 
 			<div class="cards grid grid-cols-3 w-full gap-[1.5rem]">
-				<div class="card flex flex-col items-center h-[21.75rem] text-center">
+				<div class="card flex flex-col items-center text-center">
 					<h3 class="uppercase text-[2rem]">
 						{{ $t('SINGING') }}
 					</h3>
@@ -180,7 +180,7 @@ const RequestEmailForm = defineAsyncComponent(() => import('~/components/Request
 					</span>
 				</div>
 
-				<div class="card flex flex-col items-center h-[21.75rem] text-center">
+				<div class="card flex flex-col items-center text-center">
 					<h3 class="uppercase text-[2rem]">
 						{{ $t('GIANTS_WORLD') }}
 					</h3>
@@ -197,7 +197,7 @@ const RequestEmailForm = defineAsyncComponent(() => import('~/components/Request
 					</span>
 				</div>
 
-				<div class="card flex flex-col items-center h-[21.75rem] text-center">
+				<div class="card flex flex-col items-center text-center">
 					<h3 class="uppercase text-[2rem]">
 						{{ $t('LIGHT_AND_DREAMS') }}
 					</h3>
