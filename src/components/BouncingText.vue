@@ -11,11 +11,13 @@ const props = defineProps({
 })
 
 // Функція для нормалізації пробілів (прибираємо нерозривні)
-const normalizeSpaces = (text) => text.replace(/\u00A0/g, ' ')
+const normalizeSpaces = text => text.replace(/\u00A0/g, ' ')
 
 // Розбиваємо текст на масив об'єктів (щоб Vue коректно оновлював список)
-const splitText = computed(() => 
-  normalizeSpaces(props.textToAnimate).split('').map((char, index) => ({ char, index }))
+const splitText = computed(() =>
+  normalizeSpaces(props.textToAnimate)
+    .split('')
+    .map((char, index) => ({ char, index }))
 )
 
 // Масив для посилань на літери
@@ -39,7 +41,7 @@ const handleMouseMove = (event, index) => {
       y: -lift,
       scaleY: scale,
       duration: 0.2,
-      ease: 'power2.out'
+      ease: 'power2.out',
     })
   })
 }
@@ -50,7 +52,7 @@ const handleMouseLeave = () => {
     y: 0,
     scaleY: 1,
     duration: 0.3,
-    ease: 'power2.out'
+    ease: 'power2.out',
   })
 }
 
@@ -59,7 +61,9 @@ onMounted(async () => {
   await nextTick() // Гарантуємо, що DOM оновлений
   letterRefs.value.forEach((letter, index) => {
     if (letter) {
-      letter.addEventListener('mousemove', (event) => handleMouseMove(event, index))
+      letter.addEventListener('mousemove', event =>
+        handleMouseMove(event, index)
+      )
       letter.addEventListener('mouseleave', handleMouseLeave)
     }
   })
@@ -67,7 +71,7 @@ onMounted(async () => {
 
 // Видаляємо обробники при знищенні компонента
 onUnmounted(() => {
-  letterRefs.value.forEach((letter) => {
+  letterRefs.value.forEach(letter => {
     if (letter) {
       letter.removeEventListener('mousemove', handleMouseMove)
       letter.removeEventListener('mouseleave', handleMouseLeave)
@@ -79,9 +83,9 @@ onUnmounted(() => {
 <template>
   <component :is="wrapperTag" class="bouncing-text">
     <span
-      v-for="({ char, index }) in splitText"
+      v-for="{ char, index } in splitText"
       :key="index"
-      :ref="(el) => letterRefs[index] = el"
+      :ref="el => (letterRefs[index] = el)"
       class="letter"
     >
       {{ char === ' ' ? '\u00A0' : char }}
@@ -98,6 +102,8 @@ onUnmounted(() => {
 .letter {
   min-width: 0.5ch;
   display: inline-block;
-  transition: transform 0.2s ease, scale 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    scale 0.2s ease;
 }
 </style>

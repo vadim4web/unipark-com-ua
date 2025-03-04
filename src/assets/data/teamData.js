@@ -31,9 +31,8 @@ const teamData = [
   { name: 'Team8', role: 'Team8_', class: 'grid-item-8', image: img8 },
 ]
 
-const teamGridData = teamData.filter(member => member.class !== 'grid-item-CHIEF')
+const teamGridData = teamData.filter(
+  member => member.class !== 'grid-item-CHIEF'
+)
 
-export {
-  teamData,
-  teamGridData
-}
+export { teamData, teamGridData }

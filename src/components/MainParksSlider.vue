@@ -6,8 +6,23 @@ import { sliderData as slides } from '~/assets/data'
 </script>
 
 <template>
-  <vueper-slides fade :duration="5000" :transition-speed="1000" lazy lazy-load-on-drag :fixed-height="true" :bullets="false" class="no-shadow" :autoplay="true">
-    <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" :link="slide.link">
+  <vueper-slides
+    fade
+    :duration="5000"
+    :transition-speed="1000"
+    lazy
+    lazy-load-on-drag
+    :fixed-height="true"
+    :bullets="false"
+    class="no-shadow"
+    :autoplay="true"
+  >
+    <vueper-slide
+      v-for="(slide, i) in slides"
+      :key="i"
+      :image="slide.image"
+      :link="slide.link"
+    >
       <template #loader>
         <!-- <i class="icon icon-loader spinning"></i> -->
         <span>Loading...</span>

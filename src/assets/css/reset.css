@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: sans-serif;
 }
@@ -15,13 +16,15 @@ html, body {
 body {
   background-color: #fff; /* Початковий фон для світлої теми */
   color: #000; /* Початковий текстовий колір */
-  font-family: "IntelClearRegular", sans-serif;
+  font-family: 'IntelClearRegular', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul, ol, menu {
+ul,
+ol,
+menu {
   list-style: none;
 }
 
@@ -31,18 +34,28 @@ a {
 }
 
 /* Для фіксованих елементів */
-img, picture, video {
+img,
+picture,
+video {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   font: inherit;
 }
 
 /* Додаємо клас для заголовків та важливих елементів */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: inherit;
 }

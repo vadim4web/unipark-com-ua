@@ -14,7 +14,8 @@ const { locale, t } = useI18n()
 // `${t(route.meta.title)}\u2003UniPark`
 
 const updateTitle = () => {
-  document.title = route.meta.title ? `${t(route.meta.title)} 🌳 UniPark` : 'Universal Park'
+  document.title =
+    route.meta.title ? `${t(route.meta.title)} 🌳 UniPark` : 'Universal Park'
 }
 
 watch([route, locale], updateTitle, { immediate: true })
@@ -23,7 +24,7 @@ onMounted(updateTitle)
 </script>
 
 <template>
-	<header-view />
-	<router-view />
-	<footer-view />
+  <header-view />
+  <router-view />
+  <footer-view />
 </template>

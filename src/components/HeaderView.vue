@@ -11,13 +11,13 @@ const parksMenuClose = () => {
 }
 
 const parksMenuOpen = () => {
-	parksList.value.removeAttribute('inert')
-	parksList.value.classList.add('open')
+  parksList.value.removeAttribute('inert')
+  parksList.value.classList.add('open')
 }
 
 const parksMenuToggle = () => {
   if (Array.from(parksList.value.classList).includes('open')) parksMenuClose()
-	else parksMenuOpen()
+  else parksMenuOpen()
 }
 </script>
 
@@ -25,8 +25,8 @@ const parksMenuToggle = () => {
   <header class="relative">
     <nav class="flex justify-center items-center">
       <router-link to="/" class="logo-link" @click="parksMenuClose">
-				<img src="/UNIPARK.png" alt="UniPark logo" class="logo-image">
-			</router-link>
+        <img src="/UNIPARK.png" alt="UniPark logo" class="logo-image" />
+      </router-link>
       <menu class="main-menu flex justify-center items-center">
         <li>
           <router-link to="/" @click="parksMenuClose">
@@ -48,16 +48,14 @@ const parksMenuToggle = () => {
                   }}</router-link>
                 </li>
                 <li>
-                  <router-link
-                    to="/magic-garden"
-                    @click="parksMenuClose"
-                    >{{ $t('MAGIC_GARDEN') }}</router-link>
+                  <router-link to="/magic-garden" @click="parksMenuClose">{{
+                    $t('MAGIC_GARDEN')
+                  }}</router-link>
                 </li>
                 <li>
-                  <router-link
-                    to="/giants-world"
-                    @click="parksMenuClose"
-                    >{{ $t('GIANTS_WORLD') }}</router-link>
+                  <router-link to="/giants-world" @click="parksMenuClose">{{
+                    $t('GIANTS_WORLD')
+                  }}</router-link>
                 </li>
                 <li>
                   <router-link to="/troldomy" @click="parksMenuClose">{{
@@ -65,16 +63,14 @@ const parksMenuToggle = () => {
                   }}</router-link>
                 </li>
                 <li>
-                  <router-link
-                    to="/light-and-dreams"
-                    @click="parksMenuClose"
-                    >{{ $t('LIGHT_AND_DREAMS') }}</router-link>
+                  <router-link to="/light-and-dreams" @click="parksMenuClose">{{
+                    $t('LIGHT_AND_DREAMS')
+                  }}</router-link>
                 </li>
                 <li>
-                  <router-link
-                    to="/fantastic-park"
-                    @click="parksMenuClose"
-                    >{{ $t('FANTASTIC_PARK') }}</router-link>
+                  <router-link to="/fantastic-park" @click="parksMenuClose">{{
+                    $t('FANTASTIC_PARK')
+                  }}</router-link>
                 </li>
               </ul>
             </li>
@@ -171,15 +167,15 @@ header {
   nav {
     width: 100%;
 
-		.logo-link {
-			padding: 0 !important;
-			position: relative;
-			left: 1.5rem;
+    .logo-link {
+      padding: 0 !important;
+      position: relative;
+      left: 1.5rem;
 
-			.logo-image {
-				transform: scale(1.1);
-			}
-		}
+      .logo-image {
+        transform: scale(1.1);
+      }
+    }
   }
 
   menu li {
@@ -212,7 +208,6 @@ header {
       & .open.parks-list {
         opacity: 1;
         background: var(--bg-color);
-  
       }
     }
   }

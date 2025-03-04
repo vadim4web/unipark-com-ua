@@ -1,53 +1,53 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @import url('./assets/css/reset.css');
 @import url('./assets/css/typography.css');
 
 @font-face {
-  font-family: "IntelClearBold";
-  src: url("./assets/font/intel-clear/IntelClear_Bd.ttf") format("truetype");
+  font-family: 'IntelClearBold';
+  src: url('./assets/font/intel-clear/IntelClear_Bd.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "IntelClearItalic";
-  src: url("./assets/font/intel-clear/IntelClear_It.ttf") format("truetype");
+  font-family: 'IntelClearItalic';
+  src: url('./assets/font/intel-clear/IntelClear_It.ttf') format('truetype');
   font-style: italic;
 }
 
 @font-face {
-  font-family: "IntelClearLightItalic";
-  src: url("./assets/font/intel-clear/IntelClear_LtIt.ttf") format("truetype");
+  font-family: 'IntelClearLightItalic';
+  src: url('./assets/font/intel-clear/IntelClear_LtIt.ttf') format('truetype');
   font-style: italic;
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: "IntelClearProBold";
-  src: url("./assets/font/intel-clear/IntelClearPro_Bd.ttf") format("truetype");
+  font-family: 'IntelClearProBold';
+  src: url('./assets/font/intel-clear/IntelClearPro_Bd.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "IntelClearBoldItalic";
-  src: url("./assets/font/intel-clear/IntelClear_BdIt.ttf") format("truetype");
+  font-family: 'IntelClearBoldItalic';
+  src: url('./assets/font/intel-clear/IntelClear_BdIt.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "IntelClearLight";
-  src: url("./assets/font/intel-clear/IntelClear_Lt.ttf") format("truetype");
+  font-family: 'IntelClearLight';
+  src: url('./assets/font/intel-clear/IntelClear_Lt.ttf') format('truetype');
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: "IntelClearRegular";
-  src: url("./assets/font/intel-clear/IntelClear_Rg.ttf") format("truetype");
+  font-family: 'IntelClearRegular';
+  src: url('./assets/font/intel-clear/IntelClear_Rg.ttf') format('truetype');
   font-weight: normal;
 }
 
 /* Змінні для світлої теми */
-[data-theme="light"] {
+[data-theme='light'] {
   --is-dark: 0;
   --is-light: 1;
   --text-color: #000;
@@ -57,7 +57,7 @@
 }
 
 /* Змінні для темної теми */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --is-dark: 1;
   --is-light: 0;
   --text-color: #fff;
@@ -68,7 +68,7 @@
 
 :root {
   --link-color: #64c36c;
-  --accent: #C5D435;
+  --accent: #c5d435;
   --text-color-gray: #7d7d7d;
   --text-color-gray-50: #7d7d7d7d;
   --text-color-gray-25: #7d7d7d40;
@@ -78,7 +78,7 @@
   --gradient-bg-225: linear-gradient(225deg, #cfd71d, #0bb2ac);
   --header-height: max(80px, 5rem);
   --footer-height: max(400px, 25rem);
-  font-family: "IntelClearRegular";
+  font-family: 'IntelClearRegular';
   color: var(--text-color);
 }
 
@@ -89,20 +89,20 @@
 }
 
 ::-webkit-scrollbar {
-	width: 0.5rem;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--text-color-gray);
-	border-radius: 0.25rem;
-	-webkit-border-radius: 0.25rem;
-	-moz-border-radius: 0.25rem;
-	-ms-border-radius: 0.25rem;
-	-o-border-radius: 0.25rem;
+  background-color: var(--text-color-gray);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-track {
-	background: linear-gradient(0deg, var(--text-color), var(--bg-color));
+  background: linear-gradient(0deg, var(--text-color), var(--bg-color));
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -110,22 +110,22 @@
 }
 
 ::-webkit-scrollbar-track:hover {
-	background: var(--bg-color);
+  background: var(--bg-color);
 }
 
 ::selection {
-	background: var(--text-color);
-	color: var(--bg-color);
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
 ::-moz-selection {
-	background: var(--text-color);
-	color: var(--bg-color);
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
 ::-webkit-selection {
-	background: var(--text-color);
-	color: var(--bg-color);
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
 /* Базові стилі */
@@ -176,8 +176,12 @@ footer {
 }
 
 @keyframes appearance {
-  from { opacity: 0 }
-  to {opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes top-text {
@@ -187,7 +191,7 @@ footer {
     -moz-transform: translateY(-75vh);
     -ms-transform: translateY(-75vh);
     -o-transform: translateY(-75vh);
-}
+  }
   to {
     transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -204,7 +208,7 @@ footer {
     -moz-transform: translateY(75vh);
     -ms-transform: translateY(75vh);
     -o-transform: translateY(75vh);
-}
+  }
   to {
     transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -221,8 +225,12 @@ footer {
   -ms-transform: translateY(-75vh);
   -o-transform: translateY(-75vh);
   opacity: 0;
-  animation: top-text 1s ease-out forwards, appearance 1s linear forwards;
-  -webkit-animation: top-text 1s ease-out forwards, appearance 1s linear forwards;
+  animation:
+    top-text 1s ease-out forwards,
+    appearance 1s linear forwards;
+  -webkit-animation:
+    top-text 1s ease-out forwards,
+    appearance 1s linear forwards;
 }
 
 .bottom-text {
@@ -232,6 +240,10 @@ footer {
   -ms-transform: translateY(75vh);
   -o-transform: translateY(75vh);
   opacity: 0;
-  animation: bottom-text 1s ease-out forwards, appearance 1s linear forwards;
-  -webkit-animation: bottom-text 1s ease-out forwards, appearance 1s linear forwards;
+  animation:
+    bottom-text 1s ease-out forwards,
+    appearance 1s linear forwards;
+  -webkit-animation:
+    bottom-text 1s ease-out forwards,
+    appearance 1s linear forwards;
 }

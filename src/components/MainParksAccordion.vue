@@ -4,7 +4,7 @@ import { parksData } from '../assets/data'
 
 const parks = ref(parksData)
 
-const toggleMenu = (index) => {
+const toggleMenu = index => {
   parks.value.forEach((park, i) => {
     if (i !== index) {
       park.isOpen = false
@@ -13,27 +13,30 @@ const toggleMenu = (index) => {
   parks.value[index].isOpen = !parks.value[index].isOpen
 }
 
-const preloadImages = (parkIndex) => {
+const preloadImages = parkIndex => {
   const images = parks.value[parkIndex].images
-  images.forEach((image) => {
+  images.forEach(image => {
     const img = new Image()
     img.src = image
   })
 }
 
 onMounted(() => {
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const index = entry.target.dataset.index
-        preloadImages(index)
-        observer.unobserve(entry.target)
-      }
-    })
-  }, { threshold: 0.5 })
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = entry.target.dataset.index
+          preloadImages(index)
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
 
   const parkItems = document.querySelectorAll('.park-item')
-  parkItems.forEach((item) => {
+  parkItems.forEach(item => {
     observer.observe(item)
   })
 })
@@ -41,13 +44,33 @@ onMounted(() => {
 
 <template>
   <ul class="parks-list relative">
-    <li v-for="(park, index) in parks" :key="index" :data-index="index" class="flex flex-col park-item" :class="{ open: park.isOpen }">
-      <div v-if="park.images.length" class="grid grid-cols-3" @click="toggleMenu(index)">
-        <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">{{ $t(park.name) }}</h3>
-        <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
+    <li
+      v-for="(park, index) in parks"
+      :key="index"
+      :data-index="index"
+      class="flex flex-col park-item"
+      :class="{ open: park.isOpen }"
+    >
+      <div
+        v-if="park.images.length"
+        class="grid grid-cols-3"
+        @click="toggleMenu(index)"
+      >
+        <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">
+          {{ $t(park.name) }}
+        </h3>
+        <p
+          class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center"
+        >
+          {{ $t(park.description) }}
+        </p>
         <div class="flex items-center justify-end button-wrapper">
           <button class="flex items-center justify-center">
-            <svg viewBox="0 0 25 25" stroke-width="5" stroke="var(--text-color-gray)">
+            <svg
+              viewBox="0 0 25 25"
+              stroke-width="5"
+              stroke="var(--text-color-gray)"
+            >
               <line x1="0" y1="13" x2="25" y2="13"></line>
               <line x1="13" y1="0" x2="13" y2="25" class="vertical-line"></line>
             </svg>
@@ -55,13 +78,35 @@ onMounted(() => {
         </div>
       </div>
 
-      <router-link v-else :to="`/${park.slug}`" role="button" class="grid grid-cols-3">
-        <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">{{ $t(park.name) }}</h3>
-        <p class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center">{{ $t(park.description) }}</p>
+      <router-link
+        v-else
+        :to="`/${park.slug}`"
+        role="button"
+        class="grid grid-cols-3"
+      >
+        <h3 class="text-pro-bold text-[3.25rem] flex flex-col justify-center">
+          {{ $t(park.name) }}
+        </h3>
+        <p
+          class="whitespace-pre-line leading-[120%] w-[35ch] h-[6.75rem] flex items-center"
+        >
+          {{ $t(park.description) }}
+        </p>
       </router-link>
 
-      <div v-if="park.images.length" class="image-grid-wrapper grid grid-cols-3 gap-[1.75rem]">
-        <img v-for="(image, i) in park.images" :key="i" class="image-item relative" :class="'image' + i" :style="[{ zIndex: i}]" :src="image" alt="Park Image" />
+      <div
+        v-if="park.images.length"
+        class="image-grid-wrapper grid grid-cols-3 gap-[1.75rem]"
+      >
+        <img
+          v-for="(image, i) in park.images"
+          :key="i"
+          class="image-item relative"
+          :class="'image' + i"
+          :style="[{ zIndex: i }]"
+          :src="image"
+          alt="Park Image"
+        />
       </div>
     </li>
   </ul>
@@ -95,7 +140,10 @@ onMounted(() => {
 .image-grid-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-in-out, margin-top 1s ease-in-out, border-color 1s ease-in-out;
+  transition:
+    max-height 1s ease-in-out,
+    margin-top 1s ease-in-out,
+    border-color 1s ease-in-out;
   margin-top: 3rem;
   border-top: 1px solid var(--text-color-gray-25);
 }

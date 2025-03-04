@@ -1,26 +1,26 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-<main>
-  <section class="head"></section>
+  <main>
+    <section class="head"></section>
 
-  <section class="main-info text-center flex flex-col items-center gap-[2rem]">
-    <p class="text-[1.1rem] w-[60ch] text-left">
-      {{ $t('FANTASTIC_PARK_1') }}
-    </p>
-    <p class="text-[1.1rem] w-[60ch] text-left">
-      {{ $t('FANTASTIC_PARK_2') }}
-    </p>
-    <h2 class="text-pro-bold text-[4.5rem] leading-none">
-      {{ $t('FANTASTIC_PARK_3') }}
-    </h2>
-    <p class="last uppercase text-[1.25rem]">
-      {{ $t('FANTASTIC_PARK_4') }}
-    </p>
-  </section>
-</main>
+    <section
+      class="main-info text-center flex flex-col items-center gap-[2rem]"
+    >
+      <p class="text-[1.1rem] w-[60ch] text-left">
+        {{ $t('FANTASTIC_PARK_1') }}
+      </p>
+      <p class="text-[1.1rem] w-[60ch] text-left">
+        {{ $t('FANTASTIC_PARK_2') }}
+      </p>
+      <h2 class="text-pro-bold text-[4.5rem] leading-none">
+        {{ $t('FANTASTIC_PARK_3') }}
+      </h2>
+      <p class="last uppercase text-[1.25rem]">
+        {{ $t('FANTASTIC_PARK_4') }}
+      </p>
+    </section>
+  </main>
 </template>
 
 <style lang="scss" scoped>

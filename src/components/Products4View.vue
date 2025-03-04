@@ -12,11 +12,36 @@ const props = defineProps({
 })
 
 const parks = [
-  { id: 'singing', name: 'SINGING_', img: SINGING_prev, link: '/parks/singing' },
-  { id: 'troldomy', name: 'TROLDOMY_', img: TROLDOMY_prev, link: '/parks/troldomy' },
-  { id: 'light-and-dreams', name: 'LIGHT_AND_DREAMS_', img: LIGHT_AND_DREAMS_prev, link: '/parks/light-and-dreams' },
-  { id: 'giants-world', name: 'GIANTS_WORLD_', img: GIANTS_WORLD_prev, link: '/parks/giants-world' },
-  { id: 'magic-garden', name: 'MAGIC_GARDEN_', img: MAGIC_GARDEN_prev, link: '/parks/magic-garden' },
+  {
+    id: 'singing',
+    name: 'SINGING_',
+    img: SINGING_prev,
+    link: '/parks/singing',
+  },
+  {
+    id: 'troldomy',
+    name: 'TROLDOMY_',
+    img: TROLDOMY_prev,
+    link: '/parks/troldomy',
+  },
+  {
+    id: 'light-and-dreams',
+    name: 'LIGHT_AND_DREAMS_',
+    img: LIGHT_AND_DREAMS_prev,
+    link: '/parks/light-and-dreams',
+  },
+  {
+    id: 'giants-world',
+    name: 'GIANTS_WORLD_',
+    img: GIANTS_WORLD_prev,
+    link: '/parks/giants-world',
+  },
+  {
+    id: 'magic-garden',
+    name: 'MAGIC_GARDEN_',
+    img: MAGIC_GARDEN_prev,
+    link: '/parks/magic-garden',
+  },
 ]
 
 const filteredParks = computed(() => {
@@ -33,7 +58,9 @@ const filteredParks = computed(() => {
       class="card grid grid-rows-[10rem_3.5rem_21rem]"
     >
       <img :src="park.img" :alt="$t(park.name)" class="w-full" />
-      <h4 class="text-pro-bold text-[2rem]">{{ $t(park.name.slice(0, -1)) }}</h4>
+      <h4 class="text-pro-bold text-[2rem]">
+        {{ $t(park.name.slice(0, -1)) }}
+      </h4>
       <p class="text-[0.85rem] text-neutral">{{ $t(park.name) }}</p>
     </router-link>
   </section>
@@ -51,11 +78,10 @@ const filteredParks = computed(() => {
       display: flex;
       align-self: center;
     }
-  
+
     p {
       padding-inline: 2rem;
     }
   }
-
 }
 </style>

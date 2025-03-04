@@ -61,6 +61,6 @@ const parksData = [
     isOpen: false,
     images: [],
   },
-];
+]
 
-export default parksData;
+export default parksData

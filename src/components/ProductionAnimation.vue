@@ -1,22 +1,37 @@
 <script setup>
-import { ref, onMounted, onUnmounted, nextTick } from "vue";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { imgData as images } from '~/assets/data'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
-const imageRefs = ref([]);
-const collageRef = ref(null);
+const imageRefs = ref([])
+const collageRef = ref(null)
 
-const setImageRef = (el) => {
+const setImageRef = el => {
   if (el && !imageRefs.value.includes(el)) {
-    imageRefs.value.push(el);
+    imageRefs.value.push(el)
   }
-};
+}
+
+const handleMouseMove = event => {
+  const { clientX, clientY } = event
+  const { width, height, left, top } = collageRef.value.getBoundingClientRect()
+  const x = (clientX - left - width / 2) / width
+  const y = (clientY - top - height / 2) / height
+
+  gsap.to(imageRefs.value, {
+    x: x * 20,
+    y: y * 20,
+    scale: 1.05,
+    duration: 0.5,
+    ease: 'power1.out',
+  })
+}
 
 onMounted(async () => {
-  await nextTick(); // Дочекатися оновлення DOM
+  await nextTick() // Дочекатися оновлення DOM
   requestAnimationFrame(() => {
     imageRefs.value.forEach((img, index) => {
       gsap.fromTo(
@@ -28,39 +43,25 @@ onMounted(async () => {
           y: 0,
           duration: 0.8,
           delay: index * 0.1,
-          ease: "power2.out",
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: img,
-            start: "top 100%", // Збільшив поріг видимості
-            toggleActions: "play none none reverse",
+            start: 'top 100%',
+            toggleActions: 'play none none reverse',
           },
         }
-      );
-    });
-  });
+      )
+    })
+  })
 
-  // Ефект паралаксу при русі миші
-  const handleMouseMove = (event) => {
-    const { clientX, clientY } = event;
-    const { width, height, left, top } = collageRef.value.getBoundingClientRect();
-    const x = (clientX - left - width / 2) / width;
-    const y = (clientY - top - height / 2) / height;
+  collageRef.value.addEventListener('mousemove', handleMouseMove)
+})
 
-    gsap.to(imageRefs.value, {
-      x: x * 20,
-      y: y * 20,
-      scale: 1.05,
-      duration: 0.5,
-      ease: "power1.out",
-    });
-  };
-
-  collageRef.value.addEventListener("mousemove", handleMouseMove);
-
-  onUnmounted(() => {
-    collageRef.value.removeEventListener("mousemove", handleMouseMove);
-  });
-});
+onUnmounted(() => {
+  if (collageRef.value) {
+    collageRef.value.removeEventListener('mousemove', handleMouseMove)
+  }
+})
 </script>
 
 <template>
@@ -74,7 +75,11 @@ onMounted(async () => {
       :ref="setImageRef"
       class="image-wrapper w-full aspect-square overflow-hidden relative rounded-2xl"
     >
-      <img :src="img" alt="Production Image" class="image w-full aspect-square object-cover" />
+      <img
+        :src="img"
+        alt="Production Image"
+        class="image w-full aspect-square object-cover"
+      />
     </div>
   </div>
 </template>

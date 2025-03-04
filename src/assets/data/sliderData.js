@@ -6,19 +6,19 @@ import slide4 from '../img/Slide_4.jpg'
 const sliderData = [
   {
     image: slide1,
-    link: '/light-and-dreams'
+    link: '/light-and-dreams',
   },
   {
     image: slide2,
-    link: '/magic-garden'
+    link: '/magic-garden',
   },
   {
     image: slide3,
-    link: '/giants-world'
+    link: '/giants-world',
   },
   {
     image: slide4,
-    link: '/fantastic-park'
+    link: '/fantastic-park',
   },
 ]
 

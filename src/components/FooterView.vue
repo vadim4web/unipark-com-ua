@@ -52,94 +52,98 @@
         </a>
       </div>
     </section>
-		<section class="flex flex-col justify-center">
-			<div class="sections-grid grid grid-cols-3">
-				<section class="flex flex-col justify-start gap-[1rem]">
-					<span class="text-neutral">
-						{{ $t('contacts') }}
-					</span>
-					<menu class="flex flex-col justify-start gap-[1rem]">
-						<li>
-							<a href="mailto:info@universal-parks.com">Info@universal-parks.com</a>
-						</li>
-						<li>
-							<a href="tel:+380981564340">+38 098 156 43 40</a>
-						</li>
-						<li>
-							<a href="https://maps.app.goo.gl/iKWZ3rtjMZRhoUrq6" target="_blank" rel="noopener noreferrer">{{ $t('address') }}</a>
-						</li>
-					</menu>
-				</section>
-				<section class="flex flex-col justify-center gap-[1rem]">
-					<menu class="flex flex-col justify-center gap-[1rem]">
-						<li>
-							<router-link to="/">
-								{{ $t('main') }}
-							</router-link>
-						</li>
-						<li>
-							<router-link to="/production">
-								{{ $t('production') }}
-							</router-link>
-						</li>
-						<li>
-							<router-link to="/discount">
-								{{ $t('discount') }}
-							</router-link>
-						</li>
-						<li>
-							<router-link to="/invest">
-								{{ $t('invest') }}
-							</router-link>
-						</li>
-						<li>
-							<router-link to="/company">
-								{{ $t('about') }}
-							</router-link>
-						</li>
-						<li>
-							<router-link to="/production">
-								{{ $t('production') }}
-							</router-link>
-						</li>
-					</menu>
-				</section>
-				<section class="flex flex-col justify-center gap-[1rem]">
-					<span class="text-neutral">
-						{{ $t('parks') }}
-					</span>
-					<ul class="flex flex-col justify-center gap-[1rem]">
-						<li>
-							<router-link to="/singing">{{ $t('SINGING') }}</router-link>
-						</li>
-						<li>
-							<router-link to="/troldomy">{{ $t('TROLDOMY') }}</router-link>
-						</li>
-						<li>
-							<router-link to="/giants-world">{{
-								$t('GIANTS_WORLD')
-							}}</router-link>
-						</li>
-						<li>
-							<router-link to="/light-and-dreams">{{
-								$t('LIGHT_AND_DREAMS')
-							}}</router-link>
-						</li>
-						<li>
-							<router-link to="/magic-garden">{{
-								$t('MAGIC_GARDEN')
-							}}</router-link>
-						</li>
-						<!-- <li>
+    <section class="flex flex-col justify-center">
+      <div class="sections-grid grid grid-cols-3">
+        <section class="flex flex-col justify-start gap-[1rem]">
+          <span class="text-neutral">
+            {{ $t('contacts') }}
+          </span>
+          <menu class="flex flex-col justify-start gap-[1rem]">
+            <li>
+              <a href="mailto:info@universal-parks.com">Info@universal-parks.com</a>
+            </li>
+            <li>
+              <a href="tel:+380981564340">+38 098 156 43 40</a>
+            </li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/iKWZ3rtjMZRhoUrq6"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ $t('address') }}</a>
+            </li>
+          </menu>
+        </section>
+        <section class="flex flex-col justify-center gap-[1rem]">
+          <menu class="flex flex-col justify-center gap-[1rem]">
+            <li>
+              <router-link to="/">
+                {{ $t('main') }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/production">
+                {{ $t('production') }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/discount">
+                {{ $t('discount') }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/invest">
+                {{ $t('invest') }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/company">
+                {{ $t('about') }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/production">
+                {{ $t('production') }}
+              </router-link>
+            </li>
+          </menu>
+        </section>
+        <section class="flex flex-col justify-center gap-[1rem]">
+          <span class="text-neutral">
+            {{ $t('parks') }}
+          </span>
+          <ul class="flex flex-col justify-center gap-[1rem]">
+            <li>
+              <router-link to="/singing">{{ $t('SINGING') }}</router-link>
+            </li>
+            <li>
+              <router-link to="/troldomy">{{ $t('TROLDOMY') }}</router-link>
+            </li>
+            <li>
+              <router-link to="/giants-world">{{
+                $t('GIANTS_WORLD')
+              }}</router-link>
+            </li>
+            <li>
+              <router-link to="/light-and-dreams">{{
+                $t('LIGHT_AND_DREAMS')
+              }}</router-link>
+            </li>
+            <li>
+              <router-link to="/magic-garden">{{
+                $t('MAGIC_GARDEN')
+              }}</router-link>
+            </li>
+            <!-- <li>
 							<router-link
 								to="/parks/fantastic-park"
 								@click="parksMenuClose"
 								>{{ $t('FANTASTIC_PARK') }}</router-link>
 						</li> -->
-					</ul>
-				</section>
-			</div>
-		</section>
+          </ul>
+        </section>
+      </div>
+    </section>
   </footer>
 </template>
 
